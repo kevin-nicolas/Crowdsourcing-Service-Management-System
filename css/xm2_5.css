@@ -1,0 +1,52 @@
+#xmhead{
+	background-color:white;
+	height:86px;
+}
+#xmhead ul li{	
+	height:45px;
+	line-height:45px;
+	width:80px;
+	float:left;
+	margin-left:30px;
+	text-align:center;
+	list-style-type:none;
+}
+#xmhead ul li:hover{
+	border-bottom:3px solid #3C8DBC;
+}
+.head05{
+	border-bottom:3px solid #3C8DBC;
+}
+#xmhead ul li a{
+	color:black;
+}
+.xm00{
+	height:500px;
+	width:1100px;
+	margin:0px auto;
+	background-color:white;
+}
+#caozuo01{
+	width:40px;
+	float:left;
+	margin-left:10px;
+	margin-top:0px;
+}
+#caozuo02{
+	width:40px;
+	float:left;
+	margin-left:10px;
+	margin-top:0px;
+}
+#caozuo03{
+	width:40px;
+	float:left;
+	margin-left:10px;
+	margin-top:0px;
+}
+#caozuo04{
+	width:40px;
+	float:left;
+	margin-left:10px;
+	margin-top:0px;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>众包服务管理系统</title>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../bower_components/Ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="../bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+  <link rel="stylesheet" href="../css/AdminLTE.min.css">
+  <link rel="stylesheet" href="../css/skin-blue.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  <link rel="stylesheet" href="../css/chengyuan.css">
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+        <div class="xm00">
+          <div class="row">
+            <div class="col-sm-12">
+                <div class="box">
+                  <div class="box-header">
+                      <h2>安全日志</h2>
+                  </div>
+                  <!-- /.box-header -->
+                  <div class="box-body">
+                    <table id="example1" class="table table-bordered table-striped">
+                      <thead>
+                      <tr>
+                        <th>ID</th>
+                        <th>姓名</th>
+                        <th>登录验证</th>
+                        <th>考勤验证</th>
+                        <th>访问验证</th>
+                        <th>登录设备</th>
+                        <th>登录地址</th>
+                        <th>登录时间</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                        <td>2018001</td>
+                        <td>小李</td>
+                        <td>成功</td>
+                        <td>成功</td>
+                        <td>成功</td>
+                        <td>PC-201673561049</td>
+                        <td>111.15.296.18</td>
+                        <td>2018-03-26--10:00</td>
+                      </tr>
+                      <tr>
+                        <td>2018002</td>
+                        <td>小陈</td>
+                        <td>失败</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>PC-201673561049</td>
+                        <td>132.15.766.18</td>
+                        <td>2018-03-25--11:00</td>
+                      </tr>
+                      <tr>
+                        <td>2018003</td>
+                        <td>小施</td>
+                        <td>成功</td>
+                        <td>成功</td>
+                        <td>成功</td>
+                        <td>PC-201673561049</td>
+                        <td>561.15.256.18</td>
+                        <td>2018-03-16--15:00</td>
+                      </tr>
+                      <tr>
+                        <td>2018004</td>
+                        <td>小徐</td>
+                        <td>失败</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>PC-201673561049</td>
+                        <td>891.15.366.18</td>
+                        <td>2018-03-27--19:00</td>
+                      </tr>
+                      <tr>
+                        <td>2018005</td>
+                        <td>小赵</td>
+                        <td>成功</td>
+                        <td>成功</td>
+                        <td>成功</td>
+                        <td>PC-201673561049</td>
+                        <td>177.15.276.18</td>
+                        <td>2018-03-23--22:00</td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- /.box-body -->
+                </div>
+            </div>
+           </div>  
+        </div>
+
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="../bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<script src="../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<script src="../bower_components/fastclick/lib/fastclick.js"></script>
+<script src="../js/adminlte.min.js"></script>
+<script src="../js/demo.js"></script>
+<script>
+  $(function () {
+    $('#example1').DataTable()
+    $('#example2').DataTable({
+      'paging'      : true,
+      'lengthChange': false,
+      'searching'   : false,
+      'ordering'    : true,
+      'info'        : true,
+      'autoWidth'   : false
+    })
+  })
+</script>
+</body>
+</html>

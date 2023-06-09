@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>众包服务管理系统</title>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../bower_components/Ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="../bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+  <link rel="stylesheet" href="../css/AdminLTE.min.css">
+  <link rel="stylesheet" href="../css/skin-blue.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  <style>
+    #caozuo01,#caozuo02,#caozuo03{
+      width:60px;
+      float:left;
+      margin-left:10px;
+      margin-top:0px;
+    }
+    #caozuo04{
+      width:40px;
+      float:left;
+      margin-left:10px;
+      margin-top:0px;
+    }
+    #caozuo01 a{
+      color:white;
+    }
+  </style>
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+    <section class="content container-fluid">
+        <div class="xm00">
+          <div class="row">
+            <div class="col-sm-12">
+                <div class="box">
+                  <div class="box-header">
+                  </div>
+                  <!-- /.box-header -->
+                  <div class="box-body">
+                    <table id="example1" class="table table-bordered table-striped">
+                      <thead>
+                      <tr>
+                        <th>序号</th>
+                        <th>姓名</th>
+                        <th>职业方向</th>
+                        <th>状态</th>
+                        <th>权限</th>
+                        <th>提交时间</th>
+                        <th>常用操作</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr id="row1">
+                        <td>01</td>
+                        <td>小李</td>
+                        <td>设计师</td>
+                        <td id="zhuangtai">未认证</td>
+                        <td id="permission">E</td>
+                        <td>2018-4-10 10:20</td>
+                        <td>
+                            <button type="button" class="btn btn-block btn-success btn-xs" id="caozuo01"><a href="xiaoxi.html">查看信息</a></button>
+                            <button type="button" onclick="myFunction1()" class="btn btn-block btn-info btn-xs" id="caozuo02">给予认证</button>
+                            <button type="button" onclick="myFunction2()" class="btn btn-block btn-warning btn-xs" id="caozuo03">取消认证</button>
+                            <button type="button" onclick="myFunction3()" class="btn btn-block btn-danger btn-xs" id="caozuo04">删除</button>
+                        </td>
+                      </tr>
+                      <tr id="row1">
+                        <td>02</td>
+                        <td>小施</td>
+                        <td>设计师</td>
+                        <td>已认证</td>
+                        <td id="permission">E</td>
+                        <td>2018-4-05 08:45</td>
+                        <td>
+                            <button type="button" class="btn btn-block btn-success btn-xs" id="caozuo01">查看信息</button>
+                            <button type="button" onclick="myFunction1()" class="btn btn-block btn-info btn-xs" id="caozuo02">给予认证</button>
+                            <button type="button" onclick="myFunction2()" class="btn btn-block btn-warning btn-xs" id="caozuo03">取消认证</button>
+                            <button type="button" onclick="myFunction3()" class="btn btn-block btn-danger btn-xs" id="caozuo04">删除</button>
+                        </td>
+                      </tr>
+                      <tr id="row1">
+                        <td>03</td>
+                        <td>小徐</td>
+                        <td>设计师</td>
+                        <td>已认证</td>
+                        <td id="permission">E</td>
+                        <td>2018-4-03 09:20</td>
+                        <td>
+                            <button type="button" class="btn btn-block btn-success btn-xs" id="caozuo01">查看信息</button>
+                            <button type="button" onclick="myFunction1()" class="btn btn-block btn-info btn-xs" id="caozuo02">给予认证</button>
+                            <button type="button" onclick="myFunction2()" class="btn btn-block btn-warning btn-xs" id="caozuo03">取消认证</button>
+                            <button type="button" onclick="myFunction3()" class="btn btn-block btn-danger btn-xs" id="caozuo04">删除</button>
+                        </td>
+                      </tr>
+                      <tr id="row1">
+                        <td>05</td>
+                        <td>小陈</td>
+                        <td>设计师</td>
+                        <td>已认证</td>
+                        <td id="permission">E</td>
+                        <td>2018-4-02 11:20</td>
+                        <td>
+                            <button type="button" class="btn btn-block btn-success btn-xs" id="caozuo01">查看信息</button>
+                            <button type="button" onclick="myFunction1()" class="btn btn-block btn-info btn-xs" id="caozuo02">给予认证</button>
+                            <button type="button" onclick="myFunction2()" class="btn btn-block btn-warning btn-xs" id="caozuo03">取消认证</button>
+                            <button type="button" onclick="myFunction3()" class="btn btn-block btn-danger btn-xs" id="caozuo04">删除</button>
+                        </td>
+                      </tr>
+                      
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- /.box-body -->
+                </div>
+            </div>
+           </div>  
+              </div>
+    </section>
+
+
+
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="../bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<script src="../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<script src="../bower_components/fastclick/lib/fastclick.js"></script>
+<script src="../js/adminlte.min.js"></script>
+<script src="../js/demo.js"></script>
+<!-- page script -->
+<script>
+  $(function () {
+    $('#example1').DataTable()
+    $('#example2').DataTable({
+      'paging'      : true,
+      'lengthChange': false,
+      'searching'   : false,
+      'ordering'    : true,
+      'info'        : true,
+      'autoWidth'   : false
+    })
+  })
+</script>
+<script>
+function myFunction1(){
+  x=document.getElementById("zhuangtai");  // 找到元素
+  x.innerHTML="已认证";    // 改变内容
+}
+function myFunction2(){
+  x=document.getElementById("zhuangtai");  // 找到元素
+  x.innerHTML="不合格";    // 改变内容
+}
+function myFunction3(){
+  x=document.getElementById("row1");  // 找到元素
+  x.innerHTML="";    // 改变内容
+}
+// document.getElementById("caozuo02").addEventListener("click", function(){
+//      alert("已授权");
+//  });
+//  document.getElementById("caozuo03").addEventListener("click", function(){
+//      alert("已禁用");
+//  });
+//  document.getElementById("caozuo04").addEventListener("click", function(){
+//      alert("已删除");
+//  });
+</script>
+</body>
+</html>

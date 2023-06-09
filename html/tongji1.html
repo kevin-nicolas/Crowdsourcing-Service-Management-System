@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>众包服务管理系统</title>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../bower_components/Ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="../css/AdminLTE.min.css">
+  <link rel="stylesheet" href="../css/skin-blue.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  <link rel="stylesheet" href="../css/xm2_2.css">
+
+  <link rel="stylesheet" type="text/css" href="../css/shared.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/app.min.css">
+  <style>
+    body{
+      background-color:#EEEEEE;
+    }
+    #xmhead{
+      height:70px;
+      background-color:white;
+    }
+  </style>
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+    <section class="content-header" id="xmhead">
+      <h1>
+        <i class="fa fa-line-chart"></i> 项目任务概况
+      </h1>
+    </section>
+
+    <section class="content container-fluid">
+        <div class="xm00">
+            <div class="tongji01">
+                <div class="tongji01_1"><span>任务统计</span></div>
+                <div class="col-xs-6 col-md-3 text-center tongji01_2">
+                  <div style="display:inline;width:120px;height:100px;"><input type="text" class="knob" data-thickness="0.2" data-anglearc="250" data-angleoffset="-125" value="50" data-width="120" data-height="100" data-fgcolor="#00c0ef" style="width: 64px; height: 40px; position: absolute; vertical-align: middle; margin-top: 40px; margin-left: -92px; border: 0px; background: none; font-style: normal; font-variant: normal; font-weight: bold; font-stretch: normal; font-size: 24px; line-height: normal; font-family: Arial; text-align: center; color: rgb(0, 192, 239); padding: 0px; -webkit-appearance: none;"></div>
+                  <div class="knob-label"><span class="tongji01_2_lable"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">项目完成度</font></font></span></div>
+                </div>
+                <div class="col-xs-6 col-md-3 text-center tongji01_3">
+                  <div style="display:inline;width:120px;height:100px;"><input type="text" class="knob" data-thickness="0.2" data-anglearc="250" data-angleoffset="-125" value="0" data-width="120" data-height="100" data-fgcolor="#f56954" style="width: 64px; height: 40px; position: absolute; vertical-align: middle; margin-top: 40px; margin-left: -92px; border: 0px; background: none; font-style: normal; font-variant: normal; font-weight: bold; font-stretch: normal; font-size: 24px; line-height: normal; font-family: Arial; text-align: center; color: rgb(0, 192, 239); padding: 0px; -webkit-appearance: none;"></div>
+                  <div class="knob-label"><span class="tongji01_3_lable"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">项目延期率</font></font></span></div>
+                </div>
+                <div class="tongji01_4">
+                    <p class="tongji01_4a">待完成</p>
+                    <p class="tongji01_4b">2</p>
+                </div>
+                <div class="tongji01_5">
+                    <p class="tongji01_5a">延期</p>
+                    <p class="tongji01_5b">0</p>
+                </div>
+                <div class="tongji01_6">
+                    <p class="tongji01_6a">已完成</p>
+                    <p class="tongji01_6b">2</p>
+                </div>
+                <div class="tongji01_7">
+                    <p class="tongji01_7a">任务总数</p>
+                    <p class="tongji01_7b">4</p>
+                </div>
+            </div>
+            <div class="tongji02">
+                <div ng-switch-when="0" class="stat-area stat-area--project ng-scope">
+
+            <section ng-class="{'section-area drag-area':!vm.isCustom}" pid="5a9947d81bceb7397677a484" custom="false" class="ng-scope section-area drag-area tongji02_1">
+    
+                <div class="panel portal-item">
+                    <div class="panel-heading drag-trigger">
+                        <span class="panel-title ng-binding tongji02_1a">
+                            项目燃尽图
+                        </span>
+                        <!-- ngIf: vm.isCustom -->
+                        <div class="header-btn tongji02_1b">
+                            <div class="date-range ng-isolate-scope" change="vm.change(start,end)" type="stat">
+                              <!-- ngIf: vm.switch -->
+                              <div ng-if="vm.switch" class="ng-scope">
+                                <span href="javascript:;" class="btn btn-icon" ng-click="vm.previous()">
+                                  <i class="fa fa-angle-left"></i>
+                                </span>
+                                <span href="javascript:;" ng-click="vm.selectRange($event)" class="date-text ng-binding" ng-class="{'not-down':vm.notOpen}">本周<!-- ngIf: vm.displayDateText --> <i class="fa fa-caret-down date-text-caret-down"></i></span>
+                                <span href="javascript:;" class="btn btn-icon disabled" ng-class="{true:'disabled',false:''}[vm.disableNext]" ng-click="vm.next()">
+                                <i class="fa fa-angle-right"></i>
+                                </span>
+                              </div><!-- end ngIf: vm.switch -->
+                              <!-- ngIf: !vm.switch -->
+                            </div>
+                        </div>
+                    </div>
+                <div class="panel-body drag-body">
+                    <!-- ngIf: vm.burnConfig --><div id="chart3" ng-if="vm.burnConfig" config="vm.burnConfig" class="ng-scope ng-isolate-scope" data-highcharts-chart="4"><div class="highcharts-container" id="highcharts-10" style="position: relative; overflow: hidden; width: 461px; height: 240px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); touch-action: none;"><svg version="1.1" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;" xmlns="http://www.w3.org/2000/svg" width="461" height="240"><desc>Created with Highcharts 4.2.7</desc><defs><clipPath id="highcharts-11"><rect x="0" y="0" width="389" height="141"></rect></clipPath><linearGradient x1="0" y1="0" x2="0" y2="1" id="highcharts-21"><stop offset="0" stop-color="#FEFEFE" stop-opacity="1"></stop><stop offset="1" stop-color="#F6F6F6" stop-opacity="1"></stop></linearGradient><linearGradient x1="0" y1="0" x2="0" y2="1" id="highcharts-22"><stop offset="0" stop-color="#FFF" stop-opacity="1"></stop><stop offset="1" stop-color="#ACF" stop-opacity="1"></stop></linearGradient></defs><rect x="0" y="0" width="461" height="240" fill="#fdfdfd" class=" highcharts-background"></rect><path fill="none" d="M 62 122.5 L 451 122.5" stroke="#808080" stroke-width="1" visibility="visible"></path><g class="highcharts-grid"><path fill="none" d="M 126.5 51 L 126.5 192" stroke="#D8D8D8" stroke-width="1" opacity="1"></path><path fill="none" d="M 191.5 51 L 191.5 192" stroke="#D8D8D8" stroke-width="1" opacity="1"></path><path fill="none" d="M 256.5 51 L 256.5 192" stroke="#D8D8D8" stroke-width="1" opacity="1"></path><path fill="none" d="M 320.5 51 L 320.5 192" stroke="#D8D8D8" stroke-width="1" opacity="1"></path><path fill="none" d="M 385.5 51 L 385.5 192" stroke="#D8D8D8" stroke-width="1" opacity="1"></path><path fill="none" d="M 61.5 51 L 61.5 192" stroke="#D8D8D8" stroke-width="1" opacity="1"></path><path fill="none" d="M 451.5 51 L 451.5 192" stroke="#D8D8D8" stroke-width="1" opacity="1"></path></g><g class="highcharts-grid"><path fill="none" d="M 62 122.5 L 451 122.5" stroke="#D8D8D8" stroke-width="1" opacity="1"></path></g><g class="highcharts-axis"><path fill="none" d="M 126.5 192 L 126.5 202" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 191.5 192 L 191.5 202" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 256.5 192 L 256.5 202" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 320.5 192 L 320.5 202" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 385.5 192 L 385.5 202" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 61.5 192 L 61.5 202" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 451.5 192 L 451.5 202" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 62 192.5 L 451 192.5" stroke="#C0D0E0" stroke-width="1"></path></g><g class="highcharts-axis"><text x="28" text-anchor="middle" transform="translate(0,0) rotate(270 28 121.5)" class=" highcharts-yaxis-title" style="color:#707070;fill:#707070;" y="121.5">剩余任务数</text><path fill="none" d="M 61.5 51 L 61.5 192" stroke="#C0D0E0" stroke-width="1"></path></g><g class="highcharts-series-group"><path fill="#22d7bb" fill-opacity="0.25" d="M 0 0"></path><g class="highcharts-series highcharts-series-0" transform="translate(62,51) scale(1 1)" clip-path="url(https://hzsfxy.worktile.com/tasks/projects/5a9947d81bceb7397677a484/statistics#highcharts-11)"><path fill="none" d="M 32.416666666667 70.5 L 97.25 70.5 L 162.08333333333 70.5 L 226.91666666667 70.5 L 291.75 70.5 L 356.58333333333 70.5 L 421.41666666667 70.5" stroke="#4e8af9" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></path><path fill="none" d="M 22.416666666667 70.5 L 32.416666666667 70.5 L 97.25 70.5 L 162.08333333333 70.5 L 226.91666666667 70.5 L 291.75 70.5 L 356.58333333333 70.5 L 421.41666666667 70.5 L 431.41666666667 70.5" stroke-linejoin="round" visibility="visible" stroke="rgba(192,192,192,0.0001)" stroke-width="22" class=" highcharts-tracker" style=""></path></g><g class="highcharts-markers highcharts-series-0 highcharts-tracker" transform="translate(62,51) scale(1 1)" clip-path="url(https://hzsfxy.worktile.com/tasks/projects/5a9947d81bceb7397677a484/statistics#highcharts-12)" style=""><path fill="#4e8af9" d="M 421 66.5 C 426.328 66.5 426.328 74.5 421 74.5 C 415.672 74.5 415.672 66.5 421 66.5 Z" visibility="hidden"></path><path fill="#4e8af9" d="M 356 66.5 C 361.328 66.5 361.328 74.5 356 74.5 C 350.672 74.5 350.672 66.5 356 66.5 Z"></path><path fill="#4e8af9" d="M 291 66.5 C 296.328 66.5 296.328 74.5 291 74.5 C 285.672 74.5 285.672 66.5 291 66.5 Z"></path><path fill="#4e8af9" d="M 226 66.5 C 231.328 66.5 231.328 74.5 226 74.5 C 220.672 74.5 220.672 66.5 226 66.5 Z"></path><path fill="#4e8af9" d="M 162 66.5 C 167.328 66.5 167.328 74.5 162 74.5 C 156.672 74.5 156.672 66.5 162 66.5 Z"></path><path fill="#4e8af9" d="M 97 66.5 C 102.328 66.5 102.328 74.5 97 74.5 C 91.672 74.5 91.672 66.5 97 66.5 Z"></path><path fill="#4e8af9" d="M 32 66.5 C 37.328 66.5 37.328 74.5 32 74.5 C 26.672 74.5 26.672 66.5 32 66.5 Z"></path></g><g class="highcharts-series highcharts-series-1" transform="translate(62,51) scale(1 1)" clip-path="url(https://hzsfxy.worktile.com/tasks/projects/5a9947d81bceb7397677a484/statistics#highcharts-11)"><path fill="none" d="M 32.416666666667 70.5 L 97.25 70.5 L 162.08333333333 70.5 L 226.91666666667 70.5 L 291.75 70.5 L 356.58333333333 70.5 L 421.41666666667 70.5" stroke="#22d7bb" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></path><path fill="none" d="M 22.416666666667 70.5 L 32.416666666667 70.5 L 97.25 70.5 L 162.08333333333 70.5 L 226.91666666667 70.5 L 291.75 70.5 L 356.58333333333 70.5 L 421.41666666667 70.5 L 431.41666666667 70.5" stroke-linejoin="round" visibility="visible" stroke="rgba(192,192,192,0.0001)" stroke-width="22" class=" highcharts-tracker" style=""></path></g><g class="highcharts-markers highcharts-series-1 highcharts-tracker" transform="translate(62,51) scale(1 1)" clip-path="url(https://hzsfxy.worktile.com/tasks/projects/5a9947d81bceb7397677a484/statistics#highcharts-12)" style=""><path fill="#22d7bb" d="M 421 66.5 L 425 70.5 421 74.5 417 70.5 Z" visibility="hidden"></path><path fill="#22d7bb" d="M 356 66.5 L 360 70.5 356 74.5 352 70.5 Z" stroke-width="1"></path><path fill="#22d7bb" d="M 291 66.5 L 295 70.5 291 74.5 287 70.5 Z" stroke-width="1"></path><path fill="#22d7bb" d="M 226 66.5 L 230 70.5 226 74.5 222 70.5 Z" stroke-width="1"></path><path fill="#22d7bb" d="M 162 66.5 L 166 70.5 162 74.5 158 70.5 Z" stroke-width="1"></path><path fill="#22d7bb" d="M 97 66.5 L 101 70.5 97 74.5 93 70.5 Z" stroke-width="1"></path><path fill="#22d7bb" d="M 32 66.5 L 36 70.5 32 74.5 28 70.5 Z" stroke-width="1"></path></g></g><g class="highcharts-legend" transform="translate(289,10)"><g><g><g class="highcharts-legend-item" transform="translate(8,3)"><path fill="none" d="M 0 11 L 16 11" stroke="#4e8af9" stroke-width="2"></path><path fill="#4e8af9" d="M 8 7 C 13.328 7 13.328 15 8 15 C 2.6719999999999997 15 2.6719999999999997 7 8 7 Z"></path><text x="21" style="color:#333333;font-size:12px;font-weight:bold;cursor:pointer;fill:#333333;" text-anchor="start" y="15">参考线</text></g><g class="highcharts-legend-item" transform="translate(91,3)"><path fill="none" d="M 0 11 L 16 11" stroke="#22d7bb" stroke-width="2"></path><path fill="#22d7bb" d="M 8 7 L 12 11 8 15 4 11 Z"></path><text x="21" y="15" style="color:#333333;font-size:12px;font-weight:bold;cursor:pointer;fill:#333333;" text-anchor="start">实际线</text></g></g></g></g><g class="highcharts-axis-labels highcharts-xaxis-labels"><text x="94.41666666666666" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" text-anchor="middle" transform="translate(0,0)" y="218" opacity="1">4月2日</text><text x="159.25" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" text-anchor="middle" transform="translate(0,0)" y="218" opacity="1">4月3日</text><text x="224.08333333333334" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" text-anchor="middle" transform="translate(0,0)" y="218" opacity="1">4月4日</text><text x="288.91666666666663" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" text-anchor="middle" transform="translate(0,0)" y="218" opacity="1">4月5日</text><text x="353.75" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" text-anchor="middle" transform="translate(0,0)" y="218" opacity="1">4月6日</text><text x="29.583333333333336" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" text-anchor="middle" transform="translate(0,0)" y="218" opacity="1">-1</text><text x="418.5833333333333" style="color:#606060;cursor:default;font-size:11px;fill:#606060;" text-anchor="middle" transform="translate(0,0)" y="218" opacity="1">4月7日</text></g><g class="highcharts-axis-labels highcharts-yaxis-labels"><text x="47" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:142px;text-overflow:clip;" text-anchor="end" transform="translate(0,0)" y="124" opacity="1"><tspan>0</tspan></text></g><g class="highcharts-tooltip" display="block" style="cursor:default;padding:0;pointer-events:none;white-space:nowrap;" transform="translate(125,-9999)" opacity="0" visibility="visible"><path fill="none" d="M 3.5 0.5 L 66.5 0.5 C 69.5 0.5 69.5 0.5 69.5 3.5 L 69.5 46.5 C 69.5 49.5 69.5 49.5 66.5 49.5 L 39.5 49.5 33.5 55.5 27.5 49.5 3.5 49.5 C 0.5 49.5 0.5 49.5 0.5 46.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="black" stroke-opacity="0.049999999999999996" stroke-width="5" transform="translate(1, 1)"></path><path fill="none" d="M 3.5 0.5 L 66.5 0.5 C 69.5 0.5 69.5 0.5 69.5 3.5 L 69.5 46.5 C 69.5 49.5 69.5 49.5 66.5 49.5 L 39.5 49.5 33.5 55.5 27.5 49.5 3.5 49.5 C 0.5 49.5 0.5 49.5 0.5 46.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="black" stroke-opacity="0.09999999999999999" stroke-width="3" transform="translate(1, 1)"></path><path fill="none" d="M 3.5 0.5 L 66.5 0.5 C 69.5 0.5 69.5 0.5 69.5 3.5 L 69.5 46.5 C 69.5 49.5 69.5 49.5 66.5 49.5 L 39.5 49.5 33.5 55.5 27.5 49.5 3.5 49.5 C 0.5 49.5 0.5 49.5 0.5 46.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="black" stroke-opacity="0.15" stroke-width="1" transform="translate(1, 1)"></path><path fill="rgba(249, 249, 249, .85)" d="M 3.5 0.5 L 66.5 0.5 C 69.5 0.5 69.5 0.5 69.5 3.5 L 69.5 46.5 C 69.5 49.5 69.5 49.5 66.5 49.5 L 39.5 49.5 33.5 55.5 27.5 49.5 3.5 49.5 C 0.5 49.5 0.5 49.5 0.5 46.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" stroke="#22d7bb" stroke-width="1"></path><text x="8" style="font-size:12px;color:#333333;fill:#333333;" y="20"><tspan style="font-weight:bold">4月3日</tspan><tspan x="8" dy="15">实际线: 0</tspan></text></g><g class="highcharts-button" style="cursor:default;" transform="translate(356,61)"><title>Reset zoom level 1:1</title><rect x="0.5" y="0.5" width="85" height="28" fill="url(https://hzsfxy.worktile.com/tasks/projects/5a9947d81bceb7397677a484/statistics#highcharts-21)" stroke="#CCCCCC" stroke-width="1" rx="2" ry="2"></rect><text x="5" style="color:black;fill:black;" y="17"><tspan>Reset zoom</tspan></text></g></svg></div></div><!-- end ngIf: vm.burnConfig -->
+                    <div class="loading-indicator ng-scope" done="vm.burnLoadingDone" style="display: none;">
+                    <!-- ngIf: displayText!=null -->
+            <!-- ngIf: displayText==null --><div class="hor-center ng-scope" ng-if="displayText==null">
+                <h4>            
+                    <div class="loading-ellipsis">
+                        <span class="spot"></span>
+                    </div>
+                </h4>
+            </div><!-- end ngIf: displayText==null -->
+      </div>
+        </div>
+    </div>
+</section>
+            <section ng-class="{'section-area drag-area':!vm.isCustom}" pid="5a9947d81bceb7397677a484" custom="false" class="ng-scope section-area drag-area tongji02_2">
+    
+    <div class="panel portal-item">
+        <div class="panel-heading drag-trigger">
+            <span class="panel-title ng-binding tongji02_2a">新增任务和完成任务</span>
+            <!-- ngIf: vm.isCustom -->
+            <div class="header-btn tongji02_2b">
+                <div class="date-range ng-isolate-scope" change="vm.change(start,end)" type="stat">
+    <!-- ngIf: vm.switch --><div ng-if="vm.switch" class="ng-scope">
+         <span href="javascript:;" class="btn btn-icon" ng-click="vm.previous()">
+            <i class="fa fa-angle-left"></i>
+        </span>
+        <span href="javascript:;" ng-click="vm.selectRange($event)" class="date-text ng-binding" ng-class="{'not-down':vm.notOpen}">本周<!-- ngIf: vm.displayDateText --> <i class="fa fa-caret-down date-text-caret-down"></i></span>
+        <span href="javascript:;" class="btn btn-icon disabled" ng-class="{true:'disabled',false:''}[vm.disableNext]" ng-click="vm.next()">
+            <i class="fa fa-angle-right"></i>
+        </span>
+    </div><!-- end ngIf: vm.switch -->
+    <!-- ngIf: !vm.switch -->
+</div>
+            </div>
+        </div>
+        <div class="panel-body drag-body">
+            <!-- ngIf: vm.lineConfig --><div id="chart4" ng-if="vm.lineConfig" config="vm.lineConfig" class="ng-scope ng-isolate-scope" data-highcharts-chart="3"><div class="highcharts-container" id="highcharts-6" style="position: relative; overflow: hidden; width: 461px; height: 240px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><svg version="1.1" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;" xmlns="http://www.w3.org/2000/svg" width="461" height="240"><desc>Created with Highcharts 4.2.7</desc><defs><clipPath id="highcharts-7"><rect x="0" y="0" width="417" height="148"></rect></clipPath></defs><rect x="0" y="0" width="461" height="240" fill="#fdfdfd" class=" highcharts-background"></rect><g class="highcharts-grid"></g><g class="highcharts-grid"><path fill="none" d="M 34 125.5 L 451 125.5" stroke="#D8D8D8" stroke-width="1" opacity="1"></path></g><g class="highcharts-axis"><path fill="none" d="M 37.5 199 L 37.5 209" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 105.5 199 L 105.5 209" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 173.5 199 L 173.5 209" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 242.5 199 L 242.5 209" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 310.5 199 L 310.5 209" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 378.5 199 L 378.5 209" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 446.5 199 L 446.5 209" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 34 199.5 L 451 199.5" stroke="#C0D0E0" stroke-width="1"></path></g><g class="highcharts-axis"></g><g class="highcharts-series-group"><g class="highcharts-series highcharts-series-0" transform="translate(34,51) scale(1 1)" clip-path="url(https://hzsfxy.worktile.com/tasks/projects/5a9947d81bceb7397677a484/statistics#highcharts-7)"><path fill="none" d="M 4.0882352941176 74 C 4.0882352941176 74 44.97058823529384 74 72.225490196078 74 C 99.48039215686279 74 113.10784313725519 74 140.36274509804 74 C 167.617647058824 74 181.245098039216 74 208.5 74 C 235.754901960784 74 249.38235294117598 74 276.63725490196 74 C 303.892156862744 74 317.519607843136 74 344.77450980392 74 C 372.02941176470404 74 412.91176470588 74 412.91176470588 74" stroke="#4e8af9" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></path><path fill="none" d="M -5.9117647058824 74 L 4.0882352941176 74 C 4.0882352941176 74 44.97058823529384 74 72.225490196078 74 C 99.48039215686279 74 113.10784313725519 74 140.36274509804 74 C 167.617647058824 74 181.245098039216 74 208.5 74 C 235.754901960784 74 249.38235294117598 74 276.63725490196 74 C 303.892156862744 74 317.519607843136 74 344.77450980392 74 C 372.02941176470404 74 412.91176470588 74 412.91176470588 74 L 422.91176470588 74" stroke-linejoin="round" visibility="visible" stroke="rgba(192,192,192,0.0001)" stroke-width="22" class=" highcharts-tracker" style=""></path></g><g class="highcharts-markers highcharts-series-0 highcharts-tracker" transform="translate(34,51) scale(1 1)" clip-path="url(https://hzsfxy.worktile.com/tasks/projects/5a9947d81bceb7397677a484/statistics#highcharts-8)" style=""></g><g class="highcharts-series highcharts-series-1" transform="translate(34,51) scale(1 1)" clip-path="url(https://hzsfxy.worktile.com/tasks/projects/5a9947d81bceb7397677a484/statistics#highcharts-7)"><path fill="none" d="M 4.0882352941176 74 C 4.0882352941176 74 44.97058823529384 74 72.225490196078 74 C 99.48039215686279 74 113.10784313725519 74 140.36274509804 74 C 167.617647058824 74 181.245098039216 74 208.5 74 C 235.754901960784 74 249.38235294117598 74 276.63725490196 74 C 303.892156862744 74 317.519607843136 74 344.77450980392 74 C 372.02941176470404 74 412.91176470588 74 412.91176470588 74" stroke="#22d7bb" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></path><path fill="none" d="M -5.9117647058824 74 L 4.0882352941176 74 C 4.0882352941176 74 44.97058823529384 74 72.225490196078 74 C 99.48039215686279 74 113.10784313725519 74 140.36274509804 74 C 167.617647058824 74 181.245098039216 74 208.5 74 C 235.754901960784 74 249.38235294117598 74 276.63725490196 74 C 303.892156862744 74 317.519607843136 74 344.77450980392 74 C 372.02941176470404 74 412.91176470588 74 412.91176470588 74 L 422.91176470588 74" stroke-linejoin="round" visibility="visible" stroke="rgba(192,192,192,0.0001)" stroke-width="22" class=" highcharts-tracker" style=""></path></g><g class="highcharts-markers highcharts-series-1 highcharts-tracker" transform="translate(34,51) scale(1 1)" clip-path="url(https://hzsfxy.worktile.com/tasks/projects/5a9947d81bceb7397677a484/statistics#highcharts-8)" style=""></g></g><g class="highcharts-legend" transform="translate(263,10)"><g><g><g class="highcharts-legend-item" transform="translate(8,3)"><path fill="none" d="M 0 11 L 16 11" stroke="#4e8af9" stroke-width="2"></path><text x="21" style="color:#333333;font-size:12px;font-weight:bold;cursor:pointer;fill:#333333;" text-anchor="start" y="15">新增任务</text></g><g class="highcharts-legend-item" transform="translate(104,3)"><path fill="none" d="M 0 11 L 16 11" stroke="#22d7bb" stroke-width="2"></path><text x="21" y="15" style="color:#333333;font-size:12px;font-weight:bold;cursor:pointer;fill:#333333;" text-anchor="start">完成任务</text></g></g></g></g><g class="highcharts-axis-labels highcharts-xaxis-labels"><text x="38.088235294117645" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:60px;text-overflow:clip;" text-anchor="middle" transform="translate(0,0)" y="218" opacity="1"><tspan>04-02</tspan></text><text x="106.22549019607844" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:60px;text-overflow:clip;" text-anchor="middle" transform="translate(0,0)" y="218" opacity="1"><tspan>04-03</tspan></text><text x="174.36274509803923" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:60px;text-overflow:clip;" text-anchor="middle" transform="translate(0,0)" y="218" opacity="1"><tspan>04-04</tspan></text><text x="242.5" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:60px;text-overflow:clip;" text-anchor="middle" transform="translate(0,0)" y="218" opacity="1"><tspan>04-05</tspan></text><text x="310.6372549019608" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:60px;text-overflow:clip;" text-anchor="middle" transform="translate(0,0)" y="218" opacity="1"><tspan>04-06</tspan></text><text x="378.7745098039216" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:60px;text-overflow:clip;" text-anchor="middle" transform="translate(0,0)" y="218" opacity="1"><tspan>04-07</tspan></text><text x="435.5" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:60px;text-overflow:clip;" text-anchor="middle" transform="translate(0,0)" y="218" opacity="1"><tspan>04-08</tspan></text></g><g class="highcharts-axis-labels highcharts-yaxis-labels"><text x="19" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:142px;text-overflow:clip;" text-anchor="end" transform="translate(0,0)" y="127" opacity="1"><tspan>0</tspan></text></g><g class="highcharts-tooltip" display="none" style="cursor:default;padding:0;pointer-events:none;white-space:nowrap;" transform="translate(0,0)"><path fill="none" d="M 3.5 0.5 L 13.5 0.5 C 16.5 0.5 16.5 0.5 16.5 3.5 L 16.5 13.5 C 16.5 16.5 16.5 16.5 13.5 16.5 L 3.5 16.5 C 0.5 16.5 0.5 16.5 0.5 13.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="black" stroke-opacity="0.049999999999999996" stroke-width="5" transform="translate(1, 1)"></path><path fill="none" d="M 3.5 0.5 L 13.5 0.5 C 16.5 0.5 16.5 0.5 16.5 3.5 L 16.5 13.5 C 16.5 16.5 16.5 16.5 13.5 16.5 L 3.5 16.5 C 0.5 16.5 0.5 16.5 0.5 13.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="black" stroke-opacity="0.09999999999999999" stroke-width="3" transform="translate(1, 1)"></path><path fill="none" d="M 3.5 0.5 L 13.5 0.5 C 16.5 0.5 16.5 0.5 16.5 3.5 L 16.5 13.5 C 16.5 16.5 16.5 16.5 13.5 16.5 L 3.5 16.5 C 0.5 16.5 0.5 16.5 0.5 13.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="black" stroke-opacity="0.15" stroke-width="1" transform="translate(1, 1)"></path><path fill="rgba(249, 249, 249, .85)" d="M 3.5 0.5 L 13.5 0.5 C 16.5 0.5 16.5 0.5 16.5 3.5 L 16.5 13.5 C 16.5 16.5 16.5 16.5 13.5 16.5 L 3.5 16.5 C 0.5 16.5 0.5 16.5 0.5 13.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5"></path><text x="8" style="font-size:12px;color:#333333;fill:#333333;" y="20"></text></g></svg></div></div><!-- end ngIf: vm.lineConfig -->
+            <div class="loading-indicator ng-scope" done="vm.loadingDone" style="display: none;">
+    <!-- ngIf: displayText!=null -->
+    <!-- ngIf: displayText==null --><div class="hor-center ng-scope" ng-if="displayText==null">
+        <h4>
+            
+            <div class="loading-ellipsis">
+                <span class="spot"></span>
+            </div>
+        </h4>
+    </div><!-- end ngIf: displayText==null -->
+</div>
+        </div>
+    </div>
+</section>
+            <section ng-class="{'section-area drag-area':!vm.isCustom}" pid="5a9947d81bceb7397677a484" custom="false" class="ng-scope section-area drag-area tongji02_3">
+    
+    <div class="panel portal-item">
+        <div class="panel-heading drag-trigger">
+            <span class="panel-title ng-binding">
+                任务列表
+            </span>
+            <!-- ngIf: vm.isCustom -->
+        </div>
+        <div class="panel-body drag-body">
+            <!-- ngIf: vm.taskListConfig --><div id="chart5" ng-if="vm.taskListConfig" config="vm.taskListConfig" class="ng-scope ng-isolate-scope" data-highcharts-chart="5"><div class="highcharts-container" id="highcharts-14" style="position: relative; overflow: hidden; width: 461px; height: 240px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><svg version="1.1" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;" xmlns="http://www.w3.org/2000/svg" width="461" height="240"><desc>Created with Highcharts 4.2.7</desc><defs><clipPath id="highcharts-15"><rect x="0" y="0" width="417" height="128"></rect></clipPath></defs><rect x="0" y="0" width="461" height="240" fill="#fdfdfd" class=" highcharts-background"></rect><g class="highcharts-grid"></g><g class="highcharts-grid"><path fill="none" d="M 34 199.5 L 451 199.5" stroke="#D8D8D8" stroke-width="1" opacity="1"></path><path fill="none" d="M 34 156.5 L 451 156.5" stroke="#D8D8D8" stroke-width="1" opacity="1"></path><path fill="none" d="M 34 114.5 L 451 114.5" stroke="#D8D8D8" stroke-width="1" opacity="1"></path><path fill="none" d="M 34 70.5 L 451 70.5" stroke="#D8D8D8" stroke-width="1" opacity="1"></path></g><g class="highcharts-axis"><path fill="none" d="M 242.5 199 L 242.5 209" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 451.5 199 L 451.5 209" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 33.5 199 L 33.5 209" stroke="#C0D0E0" stroke-width="1" opacity="1"></path><path fill="none" d="M 34 199.5 L 451 199.5" stroke="#C0D0E0" stroke-width="1"></path></g><g class="highcharts-axis"></g><g class="highcharts-series-group"><g class="highcharts-series highcharts-series-0 highcharts-tracker" transform="translate(34,71) scale(1 1)" style="" clip-path="url(https://hzsfxy.worktile.com/tasks/projects/5a9947d81bceb7397677a484/statistics#highcharts-15)"><rect x="53.5" y="107.5" width="101" height="0" stroke="#FFFFFF" stroke-width="1" fill="#4e8af9" rx="0" ry="0"></rect><rect x="262.5" y="85.5" width="101" height="43" stroke="#FFFFFF" stroke-width="1" fill="#4e8af9" rx="0" ry="0"></rect></g><g class="highcharts-markers highcharts-series-0" transform="translate(34,71) scale(1 1)" clip-path="none"></g><g class="highcharts-series highcharts-series-1 highcharts-tracker" transform="translate(34,71) scale(1 1)" style="" clip-path="url(https://hzsfxy.worktile.com/tasks/projects/5a9947d81bceb7397677a484/statistics#highcharts-15)"><rect x="53.5" y="107.5" width="101" height="21" stroke="#FFFFFF" stroke-width="1" fill="#22d7bb" rx="0" ry="0"></rect><rect x="262.5" y="128.5" width="101" height="0" stroke="#FFFFFF" stroke-width="1" fill="#22d7bb" rx="0" ry="0"></rect></g><g class="highcharts-markers highcharts-series-1" transform="translate(34,71) scale(1 1)" clip-path="none"></g></g><g class="highcharts-legend" transform="translate(290,10)"><g><g><g class="highcharts-legend-item" transform="translate(8,3)"><text x="21" style="color:#333333;font-size:12px;font-weight:bold;cursor:pointer;fill:#333333;" text-anchor="start" y="15">未完成</text><rect x="0" y="4" width="16" height="12" rx="2" ry="2" fill="#4e8af9"></rect></g><g class="highcharts-legend-item" transform="translate(91,3)"><text x="21" y="15" style="color:#333333;font-size:12px;font-weight:bold;cursor:pointer;fill:#333333;" text-anchor="start">已完成</text><rect x="0" y="4" width="16" height="12" rx="2" ry="2" fill="#22d7bb"></rect></g></g></g></g><g class="highcharts-axis-labels highcharts-xaxis-labels"><text x="138.25" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:199px;text-overflow:clip;" text-anchor="middle" transform="translate(0,0)" y="218" opacity="1"><tspan>监督</tspan></text><text x="346.75" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:199px;text-overflow:clip;" text-anchor="middle" transform="translate(0,0)" y="218" opacity="1"><tspan>跟进</tspan></text></g><g class="highcharts-axis-labels highcharts-yaxis-labels"><text x="19" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:142px;text-overflow:clip;" text-anchor="end" transform="translate(0,0)" y="201" opacity="1"><tspan>0</tspan></text><text x="19" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:142px;text-overflow:clip;" text-anchor="end" transform="translate(0,0)" y="158" opacity="1"><tspan>2</tspan></text><text x="19" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:142px;text-overflow:clip;" text-anchor="end" transform="translate(0,0)" y="116" opacity="1"><tspan>4</tspan></text><text x="19" style="color:#606060;cursor:default;font-size:11px;fill:#606060;width:142px;text-overflow:clip;" text-anchor="end" transform="translate(0,0)" y="73" opacity="1"><tspan>6</tspan></text></g><g class="highcharts-tooltip" display="block" style="cursor:default;padding:0;pointer-events:none;white-space:nowrap;" transform="translate(104,-9999)" opacity="0" visibility="visible"><path fill="none" d="M 3.5 0.5 L 68.5 0.5 C 71.5 0.5 71.5 0.5 71.5 3.5 L 71.5 61.5 C 71.5 64.5 71.5 64.5 68.5 64.5 L 40.5 64.5 34.5 70.5 28.5 64.5 3.5 64.5 C 0.5 64.5 0.5 64.5 0.5 61.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="black" stroke-opacity="0.049999999999999996" stroke-width="5" transform="translate(1, 1)"></path><path fill="none" d="M 3.5 0.5 L 68.5 0.5 C 71.5 0.5 71.5 0.5 71.5 3.5 L 71.5 61.5 C 71.5 64.5 71.5 64.5 68.5 64.5 L 40.5 64.5 34.5 70.5 28.5 64.5 3.5 64.5 C 0.5 64.5 0.5 64.5 0.5 61.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="black" stroke-opacity="0.09999999999999999" stroke-width="3" transform="translate(1, 1)"></path><path fill="none" d="M 3.5 0.5 L 68.5 0.5 C 71.5 0.5 71.5 0.5 71.5 3.5 L 71.5 61.5 C 71.5 64.5 71.5 64.5 68.5 64.5 L 40.5 64.5 34.5 70.5 28.5 64.5 3.5 64.5 C 0.5 64.5 0.5 64.5 0.5 61.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="black" stroke-opacity="0.15" stroke-width="1" transform="translate(1, 1)"></path><path fill="rgba(249, 249, 249, .85)" d="M 3.5 0.5 L 68.5 0.5 C 71.5 0.5 71.5 0.5 71.5 3.5 L 71.5 61.5 C 71.5 64.5 71.5 64.5 68.5 64.5 L 40.5 64.5 34.5 70.5 28.5 64.5 3.5 64.5 C 0.5 64.5 0.5 64.5 0.5 61.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" stroke="#22d7bb" stroke-width="1"></path><text x="8" style="font-size:12px;color:#333333;fill:#333333;" y="20"><tspan style="font-weight:bold">快速入门</tspan><tspan x="8" dy="15">已完成: 2</tspan><tspan x="8" dy="15">全部: 2</tspan></text></g></svg></div></div><!-- end ngIf: vm.taskListConfig -->
+            <div class="loading-indicator ng-scope" done="vm.loadingDone" style="display: none;">
+    <!-- ngIf: displayText!=null -->
+    <!-- ngIf: displayText==null --><div class="hor-center ng-scope" ng-if="displayText==null">
+        <h4>
+            
+            <div class="loading-ellipsis">
+                <span class="spot"></span>
+            </div>
+        </h4>
+    </div><!-- end ngIf: displayText==null -->
+</div>
+        </div>
+    </div>
+</section>
+            <section class="section-area drag-area ng-scope tongji02_4" pid="5a9947d81bceb7397677a484">
+    
+    <div class="panel portal-item">
+        <div class="panel-heading drag-trigger">
+            <span class="panel-title ng-binding">标签</span>
+        </div>
+        <div class="panel-body drag-body">
+            <!-- ngIf: vm.tagEmpty -->
+            <!-- ngIf: vm.tagConfig --><div id="chart6" ng-if="vm.tagConfig" config="vm.tagConfig" class="ng-scope ng-isolate-scope" data-highcharts-chart="2"><div class="highcharts-container" id="highcharts-4" style="position: relative; overflow: hidden; width: 461px; height: 240px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><svg version="1.1" style="font-family:&quot;Lucida Grande&quot;, &quot;Lucida Sans Unicode&quot;, Arial, Helvetica, sans-serif;font-size:12px;" xmlns="http://www.w3.org/2000/svg" width="461" height="240"><desc>Created with Highcharts 4.2.7</desc><defs><clipPath id="highcharts-5"><rect x="0" y="0" width="350" height="215"></rect></clipPath></defs><rect x="0" y="0" width="461" height="240" fill="#FFFFFF" class=" highcharts-background"></rect><g class="highcharts-series-group"><path fill="#22d7bb" fill-opacity="0.25" d="M 0 0"></path><g class="highcharts-series highcharts-series-0 highcharts-tracker" transform="translate(10,10) scale(1 1)" style="cursor:pointer;"><path fill="#22d7bb" d="M 174.98014186263973 10.000002022285244 A 97.5 97.5 0 1 1 174.864574456038 10.000094051727189 L 174.8916595648304 29.50007524138175 A 78 78 0 1 0 174.98411349011178 29.500001617828204 Z" stroke="#FFFFFF" stroke-width="1" stroke-linejoin="round" transform="translate(0,0)"></path></g><g class="highcharts-markers highcharts-series-0" transform="translate(10,10) scale(1 1)"></g></g><g class="highcharts-legend" transform="translate(372,10)"><g><g><g class="highcharts-legend-item" transform="translate(8,3)"><text x="21" style="color:#333333;font-size:12px;font-weight:bold;cursor:pointer;fill:#333333;" text-anchor="start" y="15">教育</text><rect x="0" y="4" width="16" height="12" fill="#22d7bb"></rect></g></g></g></g><g class="highcharts-tooltip" display="block" style="cursor:default;padding:0;pointer-events:none;white-space:nowrap;" transform="translate(138,-9999)" opacity="0" visibility="visible"><path fill="none" d="M 3.5 0.5 L 64.5 0.5 C 67.5 0.5 67.5 0.5 67.5 3.5 L 67.5 46.5 C 67.5 49.5 67.5 49.5 64.5 49.5 L 3.5 49.5 C 0.5 49.5 0.5 49.5 0.5 46.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="black" stroke-opacity="0.049999999999999996" stroke-width="5" transform="translate(1, 1)"></path><path fill="none" d="M 3.5 0.5 L 64.5 0.5 C 67.5 0.5 67.5 0.5 67.5 3.5 L 67.5 46.5 C 67.5 49.5 67.5 49.5 64.5 49.5 L 3.5 49.5 C 0.5 49.5 0.5 49.5 0.5 46.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="black" stroke-opacity="0.09999999999999999" stroke-width="3" transform="translate(1, 1)"></path><path fill="none" d="M 3.5 0.5 L 64.5 0.5 C 67.5 0.5 67.5 0.5 67.5 3.5 L 67.5 46.5 C 67.5 49.5 67.5 49.5 64.5 49.5 L 3.5 49.5 C 0.5 49.5 0.5 49.5 0.5 46.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="black" stroke-opacity="0.15" stroke-width="1" transform="translate(1, 1)"></path><path fill="rgba(249, 249, 249, .85)" d="M 3.5 0.5 L 64.5 0.5 C 67.5 0.5 67.5 0.5 67.5 3.5 L 67.5 46.5 C 67.5 49.5 67.5 49.5 64.5 49.5 L 3.5 49.5 C 0.5 49.5 0.5 49.5 0.5 46.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" stroke="#22d7bb" stroke-width="1"></path><text x="8" style="font-size:12px;color:#333333;fill:#333333;" y="20"><tspan style="font-size: 10px">教育</tspan><tspan x="8" dy="15">1条  100%</tspan></text></g></svg></div></div><!-- end ngIf: vm.tagConfig -->
+            <div class="loading-indicator ng-scope" done="vm.loadingDone" style="display: none;">
+    <!-- ngIf: displayText!=null -->
+    <!-- ngIf: displayText==null --><div class="hor-center ng-scope" ng-if="displayText==null">
+        <h4>
+            
+            <div class="loading-ellipsis">
+                <span class="spot"></span>
+            </div>
+        </h4>
+    </div><!-- end ngIf: displayText==null -->
+</div>
+        </div>
+    </div>
+</section>
+            
+        </div>
+            </div>   
+        </div>
+    </section>
+
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<script src="../bower_components/fastclick/lib/fastclick.js"></script>
+<script src="../bower_components/jquery-knob/js/jquery.knob.js"></script>
+<script src="../bower_components/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
+<script src="../bower_components/Flot/jquery.flot.js"></script>
+<script src="../bower_components/Flot/jquery.flot.resize.js"></script>
+<script src="../bower_components/Flot/jquery.flot.pie.js"></script>
+<script src="../bower_components/Flot/jquery.flot.categories.js"></script>
+<script src="../js/adminlte.min.js"></script>
+<script src="../js/demo.js"></script>
+
+
+<!--旋钮统计JS-->
+
+<script>
+  $(function () {
+    /* jQueryKnob */
+
+    $(".knob").knob({
+      /*change : function (value) {
+       //console.log("change : " + value);
+       },
+       release : function (value) {
+       console.log("release : " + value);
+       },
+       cancel : function () {
+       console.log("cancel : " + this.value);
+       },*/
+      draw: function () {
+
+        // "tron" case
+        if (this.$.data('skin') == 'tron') {
+
+          var a = this.angle(this.cv)  // Angle
+              , sa = this.startAngle          // Previous start angle
+              , sat = this.startAngle         // Start angle
+              , ea                            // Previous end angle
+              , eat = sat + a                 // End angle
+              , r = true;
+
+          this.g.lineWidth = this.lineWidth;
+
+          this.o.cursor
+          && (sat = eat - 0.3)
+          && (eat = eat + 0.3);
+
+          if (this.o.displayPrevious) {
+            ea = this.startAngle + this.angle(this.value);
+            this.o.cursor
+            && (sa = ea - 0.3)
+            && (ea = ea + 0.3);
+            this.g.beginPath();
+            this.g.strokeStyle = this.previousColor;
+            this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, sa, ea, false);
+            this.g.stroke();
+          }
+
+          this.g.beginPath();
+          this.g.strokeStyle = r ? this.o.fgColor : this.fgColor;
+          this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, sat, eat, false);
+          this.g.stroke();
+
+          this.g.lineWidth = 2;
+          this.g.beginPath();
+          this.g.strokeStyle = this.o.fgColor;
+          this.g.arc(this.xy, this.xy, this.radius - this.lineWidth + 1 + this.lineWidth * 2 / 3, 0, 2 * Math.PI, false);
+          this.g.stroke();
+
+          return false;
+        }
+      }
+    });
+    /* END JQUERY KNOB */
+
+    //INITIALIZE SPARKLINE CHARTS
+    $(".sparkline").each(function () {
+      var $this = $(this);
+      $this.sparkline('html', $this.data());
+    });
+
+    /* SPARKLINE DOCUMENTATION EXAMPLES http://omnipotent.net/jquery.sparkline/#s-about */
+    drawDocSparklines();
+    drawMouseSpeedDemo();
+
+  });
+  function drawDocSparklines() {
+
+    // Bar + line composite charts
+    $('#compositebar').sparkline('html', {type: 'bar', barColor: '#aaf'});
+    $('#compositebar').sparkline([4, 1, 5, 7, 9, 9, 8, 7, 6, 6, 4, 7, 8, 4, 3, 2, 2, 5, 6, 7],
+        {composite: true, fillColor: false, lineColor: 'red'});
+
+
+    // Line charts taking their values from the tag
+    $('.sparkline-1').sparkline();
+
+    // Larger line charts for the docs
+    $('.largeline').sparkline('html',
+        {type: 'line', height: '2.5em', width: '4em'});
+
+    // Customized line chart
+    $('#linecustom').sparkline('html',
+        {
+          height: '1.5em', width: '8em', lineColor: '#f00', fillColor: '#ffa',
+          minSpotColor: false, maxSpotColor: false, spotColor: '#77f', spotRadius: 3
+        });
+
+    // Bar charts using inline values
+    $('.sparkbar').sparkline('html', {type: 'bar'});
+
+    $('.barformat').sparkline([1, 3, 5, 3, 8], {
+      type: 'bar',
+      tooltipFormat: '{{value:levels}} - {{value}}',
+      tooltipValueLookups: {
+        levels: $.range_map({':2': 'Low', '3:6': 'Medium', '7:': 'High'})
+      }
+    });
+
+    // Tri-state charts using inline values
+    $('.sparktristate').sparkline('html', {type: 'tristate'});
+    $('.sparktristatecols').sparkline('html',
+        {type: 'tristate', colorMap: {'-2': '#fa7', '2': '#44f'}});
+
+    // Composite line charts, the second using values supplied via javascript
+    $('#compositeline').sparkline('html', {fillColor: false, changeRangeMin: 0, chartRangeMax: 10});
+    $('#compositeline').sparkline([4, 1, 5, 7, 9, 9, 8, 7, 6, 6, 4, 7, 8, 4, 3, 2, 2, 5, 6, 7],
+        {composite: true, fillColor: false, lineColor: 'red', changeRangeMin: 0, chartRangeMax: 10});
+
+    // Line charts with normal range marker
+    $('#normalline').sparkline('html',
+        {fillColor: false, normalRangeMin: -1, normalRangeMax: 8});
+    $('#normalExample').sparkline('html',
+        {fillColor: false, normalRangeMin: 80, normalRangeMax: 95, normalRangeColor: '#4f4'});
+
+    // Discrete charts
+    $('.discrete1').sparkline('html',
+        {type: 'discrete', lineColor: 'blue', xwidth: 18});
+    $('#discrete2').sparkline('html',
+        {type: 'discrete', lineColor: 'blue', thresholdColor: 'red', thresholdValue: 4});
+
+    // Bullet charts
+    $('.sparkbullet').sparkline('html', {type: 'bullet'});
+
+    // Pie charts
+    $('.sparkpie').sparkline('html', {type: 'pie', height: '1.0em'});
+
+    // Box plots
+    $('.sparkboxplot').sparkline('html', {type: 'box'});
+    $('.sparkboxplotraw').sparkline([1, 3, 5, 8, 10, 15, 18],
+        {type: 'box', raw: true, showOutliers: true, target: 6});
+
+    // Box plot with specific field order
+    $('.boxfieldorder').sparkline('html', {
+      type: 'box',
+      tooltipFormatFieldlist: ['med', 'lq', 'uq'],
+      tooltipFormatFieldlistKey: 'field'
+    });
+
+    // click event demo sparkline
+    $('.clickdemo').sparkline();
+    $('.clickdemo').bind('sparklineClick', function (ev) {
+      var sparkline = ev.sparklines[0],
+          region = sparkline.getCurrentRegionFields();
+      value = region.y;
+      alert("Clicked on x=" + region.x + " y=" + region.y);
+    });
+
+    // mouseover event demo sparkline
+    $('.mouseoverdemo').sparkline();
+    $('.mouseoverdemo').bind('sparklineRegionChange', function (ev) {
+      var sparkline = ev.sparklines[0],
+          region = sparkline.getCurrentRegionFields();
+      value = region.y;
+      $('.mouseoverregion').text("x=" + region.x + " y=" + region.y);
+    }).bind('mouseleave', function () {
+      $('.mouseoverregion').text('');
+    });
+  }
+
+  /**
+   ** Draw the little mouse speed animated graph
+   ** This just attaches a handler to the mousemove event to see
+   ** (roughly) how far the mouse has moved
+   ** and then updates the display a couple of times a second via
+   ** setTimeout()
+   **/
+  function drawMouseSpeedDemo() {
+    var mrefreshinterval = 500; // update display every 500ms
+    var lastmousex = -1;
+    var lastmousey = -1;
+    var lastmousetime;
+    var mousetravel = 0;
+    var mpoints = [];
+    var mpoints_max = 30;
+    $('html').mousemove(function (e) {
+      var mousex = e.pageX;
+      var mousey = e.pageY;
+      if (lastmousex > -1) {
+        mousetravel += Math.max(Math.abs(mousex - lastmousex), Math.abs(mousey - lastmousey));
+      }
+      lastmousex = mousex;
+      lastmousey = mousey;
+    });
+    var mdraw = function () {
+      var md = new Date();
+      var timenow = md.getTime();
+      if (lastmousetime && lastmousetime != timenow) {
+        var pps = Math.round(mousetravel / (timenow - lastmousetime) * 1000);
+        mpoints.push(pps);
+        if (mpoints.length > mpoints_max)
+          mpoints.splice(0, 1);
+        mousetravel = 0;
+        $('#mousespeed').sparkline(mpoints, {width: mpoints.length * 2, tooltipSuffix: ' pixels per second'});
+      }
+      lastmousetime = timenow;
+      setTimeout(mdraw, mrefreshinterval);
+    };
+    // We could use setInterval instead, but I prefer to do it this way
+    setTimeout(mdraw, mrefreshinterval);
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+#xmhead{
+	background-color:white;
+	height:86px;
+}
+#xmhead h1{
+	color:black;
+}
+#xmhead ul li{	
+	height:45px;
+	line-height:45px;
+	width:80px;
+	float:left;
+	margin-left:30px;
+	text-align:center;
+	list-style-type:none;
+}
+#xmhead ul li:hover{
+	border-bottom:3px solid #3C8DBC;
+}
+.head03{
+	border-bottom:3px solid #3C8DBC;
+}
+#xmhead ul li a{
+	text-decoration:none;
+	font-weight:300;
+	color:black;
+}
+.xm00{
+	margin-top:5px;
+	height:700px;
+	width:1146px;
+}
+ 

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>众包服务管理系统</title>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../bower_components/Ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="../css/AdminLTE.min.css">
+  <link rel="stylesheet" href="../css/skin-blue.min.css">
+
+  <style>
+    .head{
+      border-bottom:1px solid #D9D9D9;
+      padding-bottom:20px;
+    }
+    .main01{
+      float:left;
+      margin-left:30px;
+      font-weight:bold;
+    }
+    .main02{
+      float:left;
+      clear:both;
+      margin:10px 0 0 30px;
+      color:#B5BEC9;
+    }
+    .main03{
+      float:left;
+      clear:both;
+      margin:10px 0 0 30px;
+    }
+    .main04{
+      float:left;
+      clear:both;
+      margin:10px 0 0 30px;
+
+    }
+    .main04_0{
+      width:200px;
+    }
+    .main04_1{
+      float:left;
+      margin-left:30px;
+      margin-top:40px;
+    }
+    .main05{
+      float:left;
+      clear:both;
+      margin-left:30px;
+      margin-top:10px;
+    }
+    .main05_0{
+      width:480px;
+    }
+    .main05_3{
+      float:left;
+      margin-left:10px;
+      margin-top:40px;
+    }
+  </style>
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+
+    <section class="content-header head">
+      <h1>
+        <i class="fa fa-shield"></i> 安全管理
+      </h1>
+    </section>
+    <section class="content container-fluid">
+        <div class="main">
+            <span class="main01">平台登录IP限制</span>
+            <span class="main02">为了保证企业信息更加安全,企业所有者可以设置登录IP限制规则。设置后，只能在限制的IP下才可以登录。</span>
+            <span class="main03">企业成员仅在以下IP或IP段登录：</span>
+            <div class="form-group main04">
+                <label>添加IP：</label>
+                <div class="input-group main04_0">
+                  <div class="input-group-addon">
+                    <i class="fa fa-laptop"></i>
+                  </div>
+                  <input type="text" class="form-control" data-inputmask="'alias': 'ip'" data-mask="" style="width:200px">
+                </div>               
+            </div>
+            <button class="main04_1" id="store01">保存</button>
+
+            <div class="form-group main05">
+                <label><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">添加IP段：</font></font></label>
+                <div class="input-group main05_0">
+                  <div class="input-group-addon">
+                    <i class="fa fa-laptop"></i>
+                  </div>
+                  <input type="text" class="form-control" data-inputmask="'alias': 'ip'" data-mask="" style="width:200px"><span style="margin-left:10px;margin-top:-10px;">__</span>
+                  <input type="text" class="form-control" data-inputmask="'alias': 'ip'" data-mask="" style="width:200px;margin-left:40px;margin-top:-20px">
+                </div>
+            </div>  
+            <button class="main05_3" id="store02">保存</button>
+        </div>
+    </section>
+
+
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../js/adminlte.min.js"></script>
+<script src="../js/layer.js"></script>
+<script>
+  $('#store01').on('click', function(){
+    layer.open({
+      title:'消息',
+      type:1,
+      area: ['300px', '150px'],
+      shadeClose: true, //点击遮罩关闭
+      content: '保存成功！'
+    });
+     
+  });
+  $('#store02').on('click', function(){
+    layer.open({
+      title:'消息',
+      type: 1,
+      area: ['300px', '150px'],
+      shadeClose: true, //点击遮罩关闭
+      content: '保存成功！'
+    });
+     
+  });
+
+
+</script>
+
+</body>
+</html>

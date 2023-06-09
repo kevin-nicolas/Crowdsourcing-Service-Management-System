@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>众包服务管理系统</title>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../bower_components/Ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="../bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+  <link rel="stylesheet" href="../css/AdminLTE.min.css">
+  <link rel="stylesheet" href="../css/skins/skin-blue.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  <link rel="stylesheet" href="../css/xm2_4.css">
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+
+    <section class="content-header" id="xmhead">
+        <h1><i class="fa fa-tasks"></i>图片汇项目外包</h1>
+        <ul>
+            <li class=""><a href="xm2_1.html">看板视图</a></li>
+            <li class=""><a href="xm2_7.html">任务列表</a></li>
+            <li class=""><a href="xm2_2.html">工作日历</a></li>
+            <li class=""><a href="../sc/index.html">甘特图</a></li>
+            <li class="head04"><a href="xm2_4.html">附件</a></li>
+            <li class=""><a href="xm2_5.html">成员</a></li>
+            <!--<li class=""><a href="xm2_6.html">简报</a></li>-->
+        </ul>
+    </section>
+
+    <section class="content container-fluid">
+        <div class="xm00">
+          <div class="row">
+            <div class="col-sm-12">
+                <div class="box">
+                  <div class="box-header">
+                  </div>
+                  <!-- /.box-header -->
+                  <div class="box-body">
+                    <table id="example1" class="table table-bordered table-striped">
+                      <thead>
+                      <tr>
+                        <th>文件名</th>
+                        <th>上传者</th>
+                        <th>文件大小</th>
+                        <th>上传时间</th>
+                        <th>所属任务</th>
+                        <th>权限</th>
+                        <th>操作</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr id="row1">
+                        <td>采集图片a.zip</td>
+                        <td>李华</td>
+                        <td>65MB</td>
+                        <td>2018-04-12--16:00</td>
+                        <td id="aaa">采集图片</td>
+                        <td>E</td>
+                        <td>
+                            <button type="button" class="btn btn-block btn-success btn-xs" id="caozuo01"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">查看</font></font></button>
+                            <button type="button" onclick="myFunction1()" class="btn btn-block btn-info btn-xs" id="caozuo02"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下载</font></font></button>
+                            <!--<button type="button" onclick="myFunction2()" class="btn btn-block btn-warning btn-xs" id="caozuo03"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">禁用</font></font></button>
+                            <button type="button" onclick="myFunction3()" class="btn btn-block btn-danger btn-xs" id="caozuo04"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">删除</font></font></button>-->
+                      </tr>
+                      <tr id="row1">
+                        <td>采集图片b.zip</td>
+                        <td>王明</td>
+                        <td>78MB</td>
+                        <td>2018-03-30--10:00</td>
+                        <td>采集图片</td>
+                        <td>E</td>
+                        <td>
+                            <button type="button" class="btn btn-block btn-success btn-xs" id="caozuo01"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">查看</font></font></button>
+                            <button type="button" onclick="myFunction1()" class="btn btn-block btn-info btn-xs" id="caozuo02"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下载</font></font></button>
+                            <!--<button type="button" onclick="myFunction2()" class="btn btn-block btn-warning btn-xs" id="caozuo03"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">禁用</font></font></button>
+                            <button type="button" onclick="myFunction3()" class="btn btn-block btn-danger btn-xs" id="caozuo04"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">删除</font></font></button>-->
+                      </tr>
+                      <tr id="row1">
+                        <td>采集图片c.zip</td>
+                        <td>于适</td>
+                        <td>59MB</td>
+                        <td>2018-03-30--08:00</td>
+                        <td>采集图片</td>
+                        <td>E</td>
+                        <td>
+                            <button type="button" class="btn btn-block btn-success btn-xs" id="caozuo01"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">查看</font></font></button>
+                            <button type="button" onclick="myFunction1()" class="btn btn-block btn-info btn-xs" id="caozuo02"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下载</font></font></button>
+                            <!--<button type="button" onclick="myFunction2()" class="btn btn-block btn-warning btn-xs" id="caozuo03"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">禁用</font></font></button>
+                            <button type="button" onclick="myFunction3()" class="btn btn-block btn-danger btn-xs" id="caozuo04"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">删除</font></font></button>-->
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- /.box-body -->
+                </div>
+            </div>
+           </div>  
+              </div>
+    </section>
+
+
+
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="../bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<script src="../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<script src="../bower_components/fastclick/lib/fastclick.js"></script>
+<script src="../js/adminlte.min.js"></script>
+<script src="../js/demo.js"></script>
+<script src="../js/layer.js"></script>
+<!-- page script -->
+<script>
+  $('#caozuo01').on('click', function(){
+    layer.open({
+      title:'附件详情',
+      type: 2,
+      area: ['820px', '480px'],
+      shadeClose: true, //点击遮罩关闭
+      content: 'picture.html'
+    });
+     
+  });
+  $('#aaa').on('click', function(){
+    layer.open({
+      title:'附件详情',
+      type: 2,
+      area: ['820px', '480px'],
+      shadeClose: true, //点击遮罩关闭
+      content: 'rw1finish.html'
+    });
+     
+  });
+</script>
+</body>
+</html>

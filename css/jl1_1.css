@@ -1,0 +1,168 @@
+#jlhead01{
+	background-color:white;
+	height:77px;
+	padding-top: 25px;
+}
+.jlhead02{
+	height:65px;
+	padding-left:150px;
+} 
+.circle1{    
+	width: 35px;      
+	height: 35px;      
+	background-color:#C6CFD9;      
+	border-radius: 50%;      
+	-moz-border-radius: 50%;      
+	-webkit-border-radius: 50%; 
+	float:left;
+	margin-top:20px;  
+} 
+#circle1_1{
+	background-color:#3C8DBC;
+}
+.line{
+	width:150px;
+	border-bottom: 2px solid #C6CFD9;
+	margin-top:37px;
+	float:left;
+}
+.jlhead03{
+	height:40px;
+}
+.circle_down01{
+	height:20px;
+	line-height: 20px;
+	width: 120px;
+	margin-left: 125px;
+}
+.circle_down02{
+	height:20px;
+	line-height: 20px;
+	width: 120px;
+	margin-left: 103px;
+}
+.circle_down03{
+	height:20px;
+	line-height: 20px;
+	width: 120px;
+	margin-left: 90px;
+}
+.circle_down04{
+	height:20px;
+	line-height: 20px;
+	width: 120px;
+	margin-left: 105px;
+}
+.circle_down05{
+	height:20px;
+	line-height: 20px;
+	width: 120px;
+	margin-left: 120px;
+}
+.jl_page1{
+	width:950px;
+	height:600px;
+	background-color: white;
+	margin-left: 60px;
+}
+.worktime{
+	width:450px;
+	height:200px;
+	margin-left:30px;
+	padding-top: 30px;
+}
+.worktime01{
+	float:left;
+}
+.worktime02{
+	margin-left: 90px;
+	margin-top:0px;
+}
+.worktime03{
+	width:145px;
+	height:35px;
+	margin-left: 90px;
+	float:left;
+}
+.worktime04{
+	width:145px;
+	height:35px;
+	margin-left: 250px;
+}
+.worktime05{
+	margin-left: 90px;
+	margin-top:10px;
+}
+.liveplace{
+	width:450px;
+	height:50px;
+	margin-left:30px;
+}
+.liveplace01{
+	float:left;
+}
+.liveplace02{
+	width:145px;
+	height:35px;
+	margin-left: 30px;
+	float:left;
+}
+.liveplace03{
+	width:145px;
+	height:35px;
+	margin-left: 250px;
+}
+.workplace{
+	width:520px;
+	height:120px;
+	margin-left:30px;
+}
+.workplace01{
+	float:left;
+}
+.workplace02{
+	float:left;
+	margin-left: 20px;
+	margin-top: 0px;
+}
+.workplace03{
+	clear:both;
+	margin-left:90px;
+	margin-top: 10px;
+}
+.workplace04{
+	width:145px;
+	height:35px;
+	margin-left: 90px;
+	margin-right:20px;
+	float:left;
+}
+.workplace05{
+	width:145px;
+	height:35px;
+}
+.money{
+	width:450px;
+	height:50px;
+	margin-left:30px;
+}
+.money01{
+	float:left;
+}
+.money02{
+	width:145px;
+	height:35px;
+	float:left;
+	margin-left:60px;
+}
+.money03{
+	float:left;
+	margin-top:5px;
+	margin-left:10px;
+	color:#99A6C4;
+}
+.next{
+	width:100px;
+	margin-left: 120px;
+	margin-top: 50px;
+}

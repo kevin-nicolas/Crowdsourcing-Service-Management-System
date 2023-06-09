@@ -1,0 +1,94 @@
+#xmhead{
+	background-color:white;
+	height:86px;
+}
+#xmhead ul li{	
+	height:45px;
+	line-height:45px;
+	width:80px;
+	float:left;
+	margin-left:30px;
+	text-align:center;
+	list-style-type:none;
+}
+#xmhead ul li:hover{
+	border-bottom:3px solid #3C8DBC;
+}
+.head06{
+	border-bottom:3px solid #3C8DBC;
+}
+#xmhead ul li a{
+	color:black;
+}
+.xm00{
+	height:700px;
+	width:1100px;
+	margin:0px auto;
+}
+.ribao{
+	width:340px;
+	height:90px;
+	float:left;
+	background-color:white;
+	border:1px solid #EEEEEE;
+}
+.ribao00{
+	color:black;
+}
+.zhoubao00{
+	color:black;
+}
+.yuebao00{
+	color:black;
+}
+.zhoubao{
+	width:340px;
+	height:90px;
+	float:left;
+	margin-left:38px;
+	background-color:white;
+	border:1px solid #EEEEEE;
+}
+.yuebao{
+	width:340px;
+	height:90px;
+	float:left;
+	margin-left:38px;
+	background-color:white;
+	border:1px solid #EEEEEE;
+}
+.ribao_icon{
+	width:50px;
+	height:50px;
+	float:left;
+	margin:20px 0 20px 40px;
+}
+.zhoubao_icon{
+	width:50px;
+	height:50px;
+	float:left;
+	margin:20px 0 20px 40px;
+}
+.yuebao_icon{
+	width:50px;
+	height:50px;
+	float:left;
+	margin:20px 0 20px 40px;
+}
+.ribao_p{
+	float:left;
+	margin:35px 0 0 15px;
+}
+.zhoubao_p{
+	float:left;
+	margin:35px 0 0 15px;
+}
+.yuebao_p{
+	float:left;
+	margin:35px 0 0 15px;
+}
+.jianbao{
+	width:1100px;
+	margin-bottom:20px;
+	float:left;
+}

@@ -1,0 +1,141 @@
+.xm00{
+	background-color:white;
+	height:400px;
+	width:1000px;
+}
+#xxk{
+	width:1000px;
+	height:350px;
+}
+.xm01{
+	width:280px;
+	height:120px;
+	clear:both;
+	float:left;
+	margin:20px 0 30px 0px;
+	background-color:#FCFCFC;
+	border:1px solid #EEEEEE;
+}
+.circle{    
+	width: 27px;      
+	height: 27px;      
+	background-color:#3C8DBC;      
+	border-radius: 50%;      
+	-moz-border-radius: 50%;      
+	-webkit-border-radius: 50%; 
+	margin:10px 0 0 10px;
+	float:left;
+}
+#tab_2-2 .circle{
+	background-color:#00A65A;
+}
+#tab_2-2 .xm0101{
+	color:#00A65A;
+}
+#tab_2-2 .xm0102{
+	background-color:#00A65A;
+}
+#tab_3-2 .circle{
+	background-color:#F39C12;
+}
+#tab_3-2 .xm0101{
+	color:#F39C12;
+}
+#tab_3-2 .xm0102{
+	background-color:#F39C12;
+}
+
+#circle00{
+	color:white;
+	margin:7px;	
+}
+.xm0101{
+	float:left;
+	font-size:15px;
+	color:#3C8DBC;
+	margin:12px 0 0 10px;
+}
+.xm0102{
+	float:left;
+	color:white;
+	margin:15px 0 0 20px;
+	padding:0 4px;
+	border-radius:3px;
+	background-color:#3C8DBC;
+}
+.xm0102a{
+	font-size:12px;
+	color:white;
+}
+.xm0103{
+	clear:both;
+	float:left;
+	font-size:14px;
+	color:#66667D;
+	margin:5px 0 0 10px;
+}
+.xm0104{
+	clear:both;
+	float:left;
+	font-size:14px;
+	color:#66667D;
+	margin:5px 0 0 10px;
+}
+.xm0105{
+	float:right;
+	color:#3C8DBC;
+	margin:15px 15px 0px 0px;
+}
+.xm02{
+	width:280px;
+	height:120px;
+	float:left;
+	margin:20px 0 30px 70px;
+	background-color:#FCFCFC;
+	border:1px solid #EEEEEE;
+}
+.xm03{
+	width:280px;
+	height:120px;
+	float:left;
+	margin:20px 0 30px 70px;
+	background-color:#FCFCFC;
+	border:1px solid #EEEEEE;
+}
+.create{
+	width:280px;
+	height:120px;
+	float:left;
+	clear:both;
+	margin-left:0px;
+	background-color:#FCFCFC;
+	border:1px solid #EEEEEE;
+}
+.create01{
+	float:left;
+	margin:30px 0 0 30px;
+}
+.create02{
+	float:left;
+	margin:46px 0 0 20px;
+}
+.create_a{
+	color:#666666;
+}
+.xm04{
+	width:280px;
+	height:120px;
+	clear:both;
+	float:left;
+	margin-left:0px;
+	background-color:#FCFCFC;
+	border:1px solid #EEEEEE;
+}
+.xm05{
+	width:280px;
+	height:120px;
+	float:left;
+	margin-left:70px;
+	background-color:#FCFCFC;
+	border:1px solid #EEEEEE;
+}

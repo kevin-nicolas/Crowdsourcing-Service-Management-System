@@ -1,0 +1,65 @@
+body{
+	overflow:scroll;
+}
+#xmhead{
+	background-color:white;
+	height:86px;
+}
+#xmhead ul li{	
+	height:45px;
+	line-height:45px;
+	width:80px;
+	float:left;
+	margin-left:30px;
+	text-align:center;
+	list-style-type:none;
+}
+#xmhead ul li:hover{
+	border-bottom:3px solid #3C8DBC;
+}
+.head01{
+	border-bottom:3px solid #3C8DBC;
+}
+#xmhead ul li a{
+	color:black;
+}
+.xm00{
+	height:500px;
+	width:1500px;
+	margin:0px auto;
+}
+a{
+	color:black;
+}
+.daiban{
+	width:350px;
+	float:left;
+}
+.zaizuo{	
+	width:350px;
+	float:left;
+	margin-left:24px;
+}
+.yiwancheng{
+	width:350px;
+	float:left;
+	margin-left:24px;
+}
+.zhizuoren01{
+	float:right;
+}
+.circle{    
+	width: 32px;      
+	height: 32px;      
+	background-color:#0099CC;      
+	border-radius: 50%;      
+	-moz-border-radius: 50%;      
+	-webkit-border-radius: 50%; 
+	float:right; 
+	margin-top:-5px;
+	padding-top:7px;
+	padding-left:5px;
+	font-size:10px;
+	color:white;
+}
+

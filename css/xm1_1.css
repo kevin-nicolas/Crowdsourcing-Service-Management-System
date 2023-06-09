@@ -1,0 +1,321 @@
+#xmhead{
+	background-color:white;
+	height:77px;
+	padding-top: 25px;
+}
+.xm00{
+	background-color:white;
+	width:900px;
+	height:1600px;
+	margin:30px auto;
+}
+.jiben{
+	height:600px;
+}
+.jiben01{
+	height:45px;
+	border-bottom:1px solid #EFEFEE;	
+	padding:12px;
+}
+.jiben01_1{
+	font-size:17px;
+}
+.jiben02{
+	height:36px;
+	margin-top:20px;
+}
+.jiben02_1{
+	margin-left:15px;
+	margin-top:8px;
+	float:left;
+}
+.jiben02_2{
+	color:red;
+}
+.jiben02_3{
+	width:770px;
+	float:left;
+	margin-left:15px;
+}
+.jiben03{
+	height:350px;
+	margin-top:25px;
+	z-index: 22px;
+}
+.jiben03_1{
+	margin-left:15px;
+	margin-top:8px;
+	float:left;
+}
+.jiben03_2{
+	color:red;
+}
+.jiben03_3{
+	margin-top:10px;
+	width:770px;
+	float:left;
+}
+#jiben03_3{
+	width:770px;
+	float:left;
+	margin-left:15px;
+	border-top:0px solid black;
+	z-index: 1px;
+}
+.jiben04{
+	height:135px;
+	width:900px;
+	margin-top:20px;
+	padding-top:10px;
+}
+.jiben04_1{
+	margin-left:40px;
+	float:left;
+}
+.jiben04_2{
+	width:780px;
+	height:120px;
+	float:left;
+	margin-left:20px;
+	border:1px dotted black;
+}
+.jiben04_3{
+	clear:both;
+	float:left;
+	margin:5px 0 0 100px;
+}
+.jiben04_4{
+	float:left;
+	margin-top:3px;
+}
+.jiben04_5{
+	float:left;
+	width:180px;
+}
+.jiben04_6{
+	float:left;
+	margin-top:3px;
+}
+.jiben04_7{
+	float:left;
+	margin-left:320px;
+}
+.jiben05{
+	height:50px;
+	width:900px;
+	margin-top:20px;
+	padding-top:10px;
+}
+.jiben05_1{
+	margin-left:10px;
+	float:left;
+	margin-top:5px;
+
+}
+.jiben05_2{
+	margin-left:20px;
+	float:left;
+	width:785px;
+}
+.jiben06{
+	height:50px;
+	width:900px;
+	margin-top:20px;
+	padding-top:10px;
+}
+.jiben06_1{
+	margin-left:40px;
+	float:left;
+	margin-top:5px;
+}
+.jiben06_2{
+	margin-left:20px;
+	float:left;
+	width:785px;
+}
+.jiben07{
+	height:50px;
+	width:900px;
+	margin-top:20px;
+	padding-top:10px;
+}
+.jiben07_1{
+	margin-left:27px;
+	float:left;
+	margin-top:5px;
+}
+.jiben07_2{
+	margin-left:13px;
+	float:left;
+	width:775px;
+}
+.zhouqi{
+	width:900px;
+	height:120px;
+	margin-top:30px;
+	float:left;
+	clear:both;
+}
+.zhouqi01{
+	height:45px;
+	border-bottom:1px solid #EFEFEE;	
+	padding:12px;
+	margin-bottom:20px;
+}
+.zhouqi01_1{
+	font-size:17px;
+}
+.zhouqi{
+
+}
+.zhouqi02_1{
+	margin-left:30px;
+	margin-top:8px;
+	float:left;
+}
+.zhouqi02_2{
+	color:red;
+}
+.zhouqi02_3{
+	float:left;
+	margin-left:20px;
+	width:230px;
+}
+.zhouqi02_4{
+	float:left;
+	width:80px;
+}
+.zhouqi02_5{
+	margin-left:30px;
+	margin-top:8px;
+	float:left;
+}
+.zhouqi02_6{
+	color:red;
+}
+.zhouqi02_7{
+	float:left;
+	width:310px;
+	margin-left:20px;
+}
+.fabao{
+	float:left;
+	height:200px;
+	width:900px;
+	margin-top:30px;
+}
+.fabao01{
+	height:45px;
+	border-bottom:1px solid #EFEFEE;	
+	padding:12px;
+	margin-bottom:20px;
+}
+.fabao01_1{
+	font-size:17px;
+}
+.fabao02{
+	float:left;
+	margin:5px 0 0 60px;
+}
+.fabao02_1{
+	float:left;
+}
+.fabao02_2{
+	margin-left:20px;
+}
+.fabao02_3{
+	margin-left:20px;
+}
+.fabao02_4{
+	margin-left:20px;
+}
+.fabao03{
+	clear:both;
+	float:left;
+	margin:20px 0 0 60px;
+}
+.fabao03_1{
+
+}
+#province{
+	width:200px;
+	height:36px;
+	margin-left:10px;
+}
+#city{
+	width:200px;
+	height:36px;
+}
+.lianxi{
+	float:left;
+	height:250px;
+	width:900px;
+	margin-top:30px;
+	margin-bottom:30px;
+}
+.lianxi01{
+	height:45px;
+	border-bottom:1px solid #EFEFEE;	
+	padding:12px;
+	margin-bottom:20px;
+}
+.lianxi01_1{
+	font-size:17px;
+}
+.lianxi02_1{
+	margin-left:30px;
+	margin-top:8px;
+	float:left;
+}
+.lianxi02_2{
+	color:red;
+}
+.lianxi02_3{
+	width:725px;
+	float:left;
+	margin-left:15px;
+}
+.lianxi03{
+	margin-top:20px;
+	float:left;
+}
+.lianxi03_1{
+	margin-left:30px;
+	margin-top:8px;
+	float:left;
+	clear:both;
+}
+.lianxi03_2{
+	color:red;
+}
+.lianxi03_3{
+	width:725px;
+	float:left;
+	margin-left:15px;
+}
+.lianxi04{
+	margin-top:20px;
+	float:left;
+}
+.lianxi04_1{
+	margin-left:30px;
+	margin-top:8px;
+	float:left;
+	clear:both;
+}
+.lianxi04_2{
+	color:red;
+}
+.lianxi04_3{
+	width:725px;
+	float:left;
+	margin-left:15px;
+}
+.fabu{;
+	width:225px;
+	clear:both;
+	margin:30px auto;
+}
+.fabu a{
+	color:white;
+}

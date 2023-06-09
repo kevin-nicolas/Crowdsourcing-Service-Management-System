@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>人脸验证</title>
+    <meta charset="utf-8">
+    <script src="../js/jquery-3.2.0.min.js"></script>
+</head>
+<body>
+<div class="box">
+<!--     <input class="input" type="button" value="开启摄像头" style="width: 100px;height: 30px;" onclick="getMedia()"/> -->
+    <video id="video" width="500px" height="500px" style="margin:100px auto;" autoplay="autoplay"></video>
+     <div style="margin:100px auto;width:500px;height:500px;">
+        <canvas id="canvas" width="500px" height="500px" style="margin:100px auto;"></canvas>
+      </div>    
+   
+        <img src="" id="img" alt="" name="imge" width="500px" height="500px" style="margin:100px auto;display:none;"/>
+    
+<!--         <input type="button" id="snap" style="width: 100px;height: 30px;" value="4566" onclick="takePhoto()"> -->
+
+</div>
+<script>
+    getMedia();
+    setTimeout(function(){takePhoto();},3000);
+  function getMedia(){
+        var constraints={
+            video:{width:300,height:300}
+        };
+        var  video=document.getElementById("video");
+        var promise=navigator.mediaDevices.getUserMedia(constraints);
+        promise.then(function(MediaStream){
+            video.srcObject=MediaStream;
+            video.play();
+        });
+        var video=document.getElementById("video");
+        video.style.display="block";
+        var canvas=document.getElementById("canvas");
+        var ctx=canvas.getContext('2d');
+        ctx.drawImage(video,0,0,0,0);
+    }
+    function  takePhoto(){
+        var video=document.getElementById("video");
+        // var img=document.getElementById("img");
+        video.style.display="none";
+        var canvas=document.getElementById("canvas");
+
+        var ctx=canvas.getContext('2d');
+        ctx.drawImage(video,0,0,500,500);
+        img.src = canvas.toDataURL("image/png");
+        $.ajax({
+            type:'post',
+            url:'face.php',
+            data:{
+                img:img.src
+            },datatype:'json',
+            success:function(response){
+                
+                if (response==1) {
+                     window.location.href="./index1.php";
+                }else{
+                     window.location.href="./login1.php";
+                 }
+               
+            }
+        })
+        }
+</script>
+
+</body>
+</html>

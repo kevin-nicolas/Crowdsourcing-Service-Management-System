@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>众包服务管理系统</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="../bower_components/Ionicons/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../css/AdminLTE.min.css">
+  <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
+        page. However, you can choose any other skin. Make sure you
+        apply the skin class to the body tag so the changes take effect. -->
+  <link rel="stylesheet" href="../css/skin-blue.min.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Google Font -->
+
+  <link rel="stylesheet" href="../css/person.css">
+  <script src="../js/Chart.js"></script>
+
+
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+
+      <section class="content-header" id="rckhead">
+          <h1>
+              <i class="fa  fa-user"></i> 个人信息
+          </h1>
+      </section>
+
+      <!-- Main content -->
+      <section class="content container-fluid">
+          <div class="touxiang">
+              <div class="box box-widget widget-user-2">
+                  <div class="widget-user-header bg-aqua-active">
+                      <div class="widget-user-image">
+                          <img class="img-circle" src="../images/avatar.png" alt="用户头像">
+                      </div>
+                      <h3 class="widget-user-username"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">小李</font></font></h3>
+                      <h5 class="widget-user-desc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">设计师</font></font></h5>
+                  </div>
+                  <div class="box-footer no-padding">
+                      <ul class="nav nav-stacked">
+                          <li><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">项目</font></font><span class="pull-right badge bg-blue"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">10</font></font></span></a></li>
+                          <li><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">任务</font></font><span class="pull-right badge bg-aqua"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5</font></font></span></a></li>
+                          <li><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">已完成的任务</font></font><span class="pull-right badge bg-aqua"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3</font></font></span></a></li>
+                          <li><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;color:#A3A5A8">可工作地点: 远程</font></font></a></li>
+                          <li><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;color:#A3A5A8">可工作时间: 工作日20:00-22:00、周末12:00-21:00</font></font></a></li>
+                      </ul>
+                  </div>
+              </div>
+              <button style="width:100px;height:36px;float:left;clear:both;margin-left:100px;background-color:#00A7D0;color:white;" id="invitation"><strong>申请认证</strong></button>
+          </div>  
+
+          <div class="main">
+              <div class="introduce">
+                  <div class="introduce01">
+                      <span class="introduce01_1">个人介绍</span>                     
+                  </div>
+                  <div class="introduce02">
+                      <p>1. 熟练的掌握了平面广告设计、VI设计、标志设计、包装设计、书记装帧设计、展示设计等</p>
+                      <p>2. 熟练运用Word、Excel、Powerpoint办公软件,Freehand、CorelDRAW及Photoshop等应用软件</p>
+                      <p>3. 能完成整套VI设计</p>
+                      <p>4. 获得中华人民共和国颁发商业美工中级证和Photoshop6.0中级证</p>
+                      <p>5. 深爱设计行业，对技术有强烈追求欲望</p>
+                      <p>6. 乐钻研技术难题并享受攻克后的成就感,创意来自灵感、设计在于增加产品的附加价值，为客户羸得更多的客户是我的追求</p>
+                  </div>
+              </div>
+              <div class="work">
+                  <div class="work01">
+                      <span class="work01_1">工作经历</span>                     
+                  </div>
+                  <div class="work02">
+                      <ul class="timeline">
+                          <!-- timeline time label -->
+                          <li class="time-label">
+                              <span class="bg-blue"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                XX文化公司
+                              </font></font></span>
+                          </li>
+                          <!-- /.timeline-label -->
+                          <!-- timeline item -->
+                          <li>
+                            <i class="fa  fa-flag bg-blue"></i>
+                            <div class="timeline-item">
+                              <span class="time"><i class="fa fa-calendar"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 2017-07-01 - 至今</font></font></span>
+                              <h3 class="timeline-header"><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">设计师</font></font></a></h3>
+                              <div class="timeline-body"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                公司xx活动的大图制作</font></font></div>
+                            </div>
+                          </li>
+                          <!-- END timeline item -->
+                          <!-- timeline time label -->
+                          <li class="time-label">
+                                <span class="bg-blue"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                  XX文化公司
+                                </font></font></span>
+                          </li>
+                          <!-- /.timeline-label -->
+                          <!-- timeline item -->
+                          <li>
+                            <i class="fa  fa-flag bg-blue"></i>
+                            <div class="timeline-item">
+                              <span class="time"><i class="fa fa-calendar"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 2017-04-08 - 2017-06-30</font></font></span>
+                              <h3 class="timeline-header"><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">设计师</font></font></a></h3>
+                              <div class="timeline-body"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                公司图片制作</font></font></div>
+                            </div>
+                          </li>
+                          <!-- END timeline item -->
+                          <!-- timeline time label -->
+                          <li class="time-label">
+                                <span class="bg-blue"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                  XX文化公司
+                                </font></font></span>
+                          </li>
+                          <!-- /.timeline-label -->
+                          <!-- timeline item -->
+                          <li>
+                            <i class="fa  fa-flag bg-blue"></i>
+                            <div class="timeline-item">
+                              <span class="time"><i class="fa fa-calendar"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 2014-01-01 - 2017-04-01</font></font></span>
+                              <h3 class="timeline-header"><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">设计师</font></font></a></h3>
+                              <div class="timeline-body"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                公司活动logo制作</font></font></div>
+                            </div>
+                          </li>
+                          <!-- END timeline item -->
+                          <li>
+                            <i class="fa fa-clock-o bg-gray"></i>
+                          </li>
+                        </ul>
+                  </div>
+              </div>
+              <div class="education">
+                  <div class="education01">
+                      <span class="education01_1">教育经历</span>                     
+                  </div>
+                  <div class="education02">
+                      <ul class="timeline">
+                          <!-- timeline time label -->
+                          <li class="time-label">
+                              <span class="bg-blue"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                XX大学
+                              </font></font></span>
+                          </li>
+                          <!-- /.timeline-label -->
+                          <!-- timeline item -->
+                          <li>
+                            <i class="fa   fa-graduation-cap bg-blue"></i>
+                            <div class="timeline-item">
+                              <span class="time"><i class="fa fa-calendar"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 2011-09-01 - 2015-06-02</font></font></span>
+                              <h3 class="timeline-header"><a href="#"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">广告设计-本科</font></font></a></h3>
+                              <div class="timeline-body"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                                社团，技术小组</font></font></div>
+                            </div>
+                          </li>
+                          <!-- END timeline item -->
+                          <li>
+                            <i class="fa fa-clock-o bg-gray"></i>
+                          </li>
+                        </ul>
+                  </div>
+              </div>
+              <!-- <div class="skill">
+                  <div class="skill01">
+                      <span class="skill01_1">技能</span>                     
+                  </div>
+                  <div class="skill02">
+                      <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Javascript </font></font></p>
+                      <div class="progress progress-sm active skill02_1">
+                          <div class="progress-bar progress-bar-primary progress-bar-striped" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                          </div>
+                      </div>
+                      <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">html5 </font></font></p>
+                      <div class="progress progress-sm active skill02_2">
+                          <div class="progress-bar progress-bar-primary progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                          </div>  
+                      </div>
+                      <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Java </font></font></p>
+                      <div class="progress progress-sm active skill02_3">
+                          <div class="progress-bar progress-bar-primary progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                          </div>
+                      </div>
+                      <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Spring </font></font></p>
+                      <div class="progress progress-sm active skill02_4">
+                          <div class="progress-bar progress-bar-primary progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                          </div>
+                      </div>
+                      <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mybatis </font></font></p>
+                      <div class="progress progress-sm active skill02_5">
+                          <div class="progress-bar progress-bar-primary progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                          </div>
+                      </div>
+                  </div> -->
+
+              </div>
+          <div class="xinxi"></div>
+
+                
+ 
+      </section>
+
+<!-- REQUIRED JS SCRIPTS -->
+<!-- jQuery 3 -->
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../js/adminlte.min.js"></script>
+<script src="../js/layer.js"></script>
+<script>
+$('#jianli').on('click', function(){
+    layer.open({
+      title:'个人简历',
+      type: 2,
+      area: ['800px', '600px'],
+      shadeClose: true, //点击遮罩关闭
+      content: 'person_tj.html'
+    });
+  });
+$('#zonghe').on('click', function(){
+    layer.open({
+      title:'综合评估',
+      type: 2,
+      area: ['800px', '450px'],
+      shadeClose: true, //点击遮罩关闭
+      content: 'zonghe_tj.html'
+    });
+  });
+$('#invitation').on('click', function(){
+    layer.msg('已向平台申请认证。', {
+  icon: 1,
+  time: 2000 //2秒关闭（如果不配置，默认是3秒）
+}, function(){
+  //do something
+}); 
+  });
+
+</script>
+
+<!-- <script>
+
+   window.onload = function() {
+
+   var ctx = document.getElementById("canvas").getContext("2d");
+
+   ctx.fillRect(10, 10, 20, 20);
+
+ };
+
+  var radarChartData = {
+
+    labels: ["代码能力", "诚信程度", "沟通能力", "完成质量","完成速度","合作精神"],
+
+    datasets: [
+
+      
+
+      {
+
+        label: "My First dataset",
+
+        fillColor: "rgba(220,220,220,0.2)",
+
+        strokeColor: "rgba(220,220,220,1)",
+
+        pointColor: "rgba(220,220,220,1)",
+
+        pointStrokeColor: "#fff",
+
+        pointHighlightFill: "#fff",
+
+        pointHighlightStroke: "rgba(220,220,220,1)",
+
+        data: [65,59,70,81,56,55]
+
+      }
+
+    ]
+
+  };
+
+
+
+  window.onload = function(){
+
+    window.myRadar = new Chart(document.getElementById("canvas").getContext("2d")).Radar(radarChartData, {
+
+      responsive: true
+
+    });
+
+  }
+
+
+
+  </script> -->
+
+</body>
+</html>

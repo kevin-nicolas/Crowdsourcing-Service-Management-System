@@ -1,0 +1,102 @@
+#rckhead{
+	background-color:white;
+	height:77px;
+	padding-top: 25px;
+}
+.touxiang{
+	width:300px;
+	float:left;
+}
+.main{
+	width:750px;
+	height:1700px;
+	float:right;
+	margin-left:20px;
+}
+.introduce{
+	height:300px;
+	clear:both;
+	border:1px solid #C9C8C8;
+	background-color:white;
+}
+.introduce01{
+	height:40px;
+	border-bottom:1px solid #C9C8C8;
+}
+.introduce01_1{
+	font-size:18px;
+	float:left;
+	margin:5px 10px;
+}
+.introduce02{
+	padding-top:10px;
+	padding-right:20px;
+}
+
+.introduce02 p{
+	clear:both;
+	margin-left:10px;
+}
+.work{
+	height:550px;
+	clear:both;
+	border:1px solid #C9C8C8;
+	background-color:white;
+	margin-top:30px;
+}
+.work01{
+	height:40px;
+	border-bottom:1px solid #C9C8C8;
+}
+.work01_1{
+	font-size:18px;
+	float:left;
+	margin:5px 10px;
+}
+.work02{
+	margin-top:20px;
+}
+.education{
+	height:260px;
+	clear:both;
+	border:1px solid #C9C8C8;
+	background-color:white;
+	margin-top:30px;
+}
+.education01{
+	height:40px;
+	border-bottom:1px solid #C9C8C8;
+}
+.education01_1{
+	font-size:18px;
+	float:left;
+	margin:5px 10px;
+}
+.education02{
+	margin-top:20px;
+}
+/*.skill{
+	height:400px;
+	clear:both;
+	border:1px solid #C9C8C8;
+	background-color:white;
+	margin-top:30px;
+	padding-left:10px;
+	padding-right:10px;
+}*/
+.skill01{
+	height:40px;
+	border-bottom:1px solid #C9C8C8;
+}
+.skill01_1{
+	font-size:18px;
+	float:left;
+	margin:5px 10px;
+}
+.skill02{
+	margin-top:20px;
+}
+#canvas{
+	height:300px; 
+	width:300px;
+}

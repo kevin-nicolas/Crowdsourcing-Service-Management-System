@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>众包服务管理系统</title>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../bower_components/Ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="../bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+  <link rel="stylesheet" href="../css/AdminLTE.min.css">
+  <link rel="stylesheet" href="../css/skins/skin-blue.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  <link rel="stylesheet" href="../css/chengyuan.css">
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+        <div class="xm00">
+          <div class="row">
+            <div class="col-sm-12">
+                <div class="box">
+                  <div class="box-header">
+                      <h2>考勤列表</h2>
+                  </div>
+                  <!-- /.box-header -->
+                  <div class="box-body">
+                    <table id="example1" class="table table-bordered table-striped">
+                      <thead>
+                      <tr>
+                        <th>项目名称</th>
+                        <th>ID</th>
+                        <th>姓名</th>
+                        <th>身份</th>
+                        <th>身份验证</th>
+                        <th>开始工作时间</th>
+                        <th>结束工作时间</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                        <th>图片汇外包项目</th>
+                        <td>2018001</td>
+                        <td>小李</td>
+                        <td>设计师</td>
+                        <td>成功</td>
+                        <td>2018-03-26--8:00</td>
+                        <td>2018-03-26--10:00</td>
+                      </tr>
+                      <tr>
+                        <th>图片汇外包项目</th>
+                        <td>2018002</td>
+                        <td>小周</td>
+                        <td>设计师</td>
+                        <td>成功</td>
+                        <td>2018-03-26--9:00</td>
+                        <td>2018-03-26--11:00</td>
+                      </tr>
+                      <tr>
+                        <th>凯蒂家装外包项目</th>
+                        <td>2018003</td>
+                        <td>小凯</td>
+                        <td>开发者</td>
+                        <td>成功</td>
+                        <td>2018-03-26--13:00</td>
+                        <td>2018-03-26--15:00</td>
+                      </tr>
+                      <tr>
+                        <th>凯蒂家装外包项目</th>
+                        <td>2018004</td>
+                        <td>小郭</td>
+                        <td>测试员</td>
+                        <td>成功</td>
+                        <td>2018-03-26--15:00</td>
+                        <td>2018-03-26--19:00</td>
+                      </tr>
+                      <tr>
+                        <th>凯蒂家装外包项目</th>
+                        <td>2018005</td>
+                        <td>Hart</td>
+                        <td>设计师</td>
+                        <td>成功</td>
+                        <td>2018-03-26--20:00</td>
+                        <td>2018-03-26--22:00</td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- /.box-body -->
+                </div>
+            </div>
+           </div>  
+        </div>
+
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="../bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<script src="../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<script src="../bower_components/fastclick/lib/fastclick.js"></script>
+<script src="../js/adminlte.min.js"></script>
+<script src="../js/demo.js"></script>
+<script>
+  $(function () {
+    $('#example1').DataTable()
+    $('#example2').DataTable({
+      'paging'      : true,
+      'lengthChange': false,
+      'searching'   : false,
+      'ordering'    : true,
+      'info'        : true,
+      'autoWidth'   : false
+    })
+  })
+</script>
+</body>
+</html>

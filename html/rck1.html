@@ -1,0 +1,235 @@
+dist<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>众包服务管理系统</title>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../bower_components/Ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="../css/AdminLTE.min.css">
+  <link rel="stylesheet" href="../css/skin-blue.min.css">
+  <link rel="stylesheet" href="../css/user_list.css">
+  <link rel="stylesheet" href="../css/inn.css">
+  <link rel="stylesheet" href="../css/rck_tj.css">
+
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+
+      <section class="content-header" id="rckhead">
+          <h1>
+              <i class="fa  fa-user"></i> 人才库
+          </h1>
+      </section>
+
+      <!-- Main content -->
+      <section class="content container-fluid">
+          <div class="rck">
+              <!--条件选择-->
+              <div class="inn-user-filter">
+                  <div class="filter-box clearfix J_Filter">
+                      <span class="filter-title">角色</span>
+                      <div class="filter-content">
+                          <div class="list clearfix">
+                              <a class="on all-item" href="#" style="background-color:#dcefff;color:#2994f2;">全部</a>
+                              <a href="#">设计师</a><a href="#">前端工程师</a><a href="#">移动端工程师</a><a href="#" >小程序</a><a href="#">游戏工程师</a><a href="#">后端工程师</a><a href="#">测试</a><a href="#">DBA工程师</a><a href="#">运维工程师</a><a href="#">其他</a>            
+                          </div>
+                      </div>
+                      <span class="filter-more J_FilterMore">更多</span>
+                  </div>
+                  <div class="filter-box clearfix J_Filter">
+                      <span class="filter-title">地点</span>
+                      <div class="filter-content">
+                          <div class="list clearfix">
+                              <a class="on all-item" href="#"  style="background-color:#dcefff;color:#2994f2;">全部</a>
+                              <a href="#" track="373filter,city">北京</a><a href="#" track="373filter,city">上海</a><a href="#" track="373filter,city">深圳</a><a href="#" track="373filter,city">杭州</a><a href="#" track="373filter,city">广州</a><a href="#" track="373filter,city">成都</a><a href="#" track="373filter,city">武汉</a><a href="#" track="373filter,city">南京</a><a href="#" track="373filter,city">西安</a><a href="#" track="373filter,city">重庆</a><a href="#" track="373filter,city">长沙</a><a href="#" track="373filter,city">厦门</a><a href="#" track="373filter,city">郑州</a><a href="#" track="373filter,city">天津</a><a href="#" track="373filter,city">济南 </a><a href="#" track="373filter,city">苏州</a><a href="#" track="373filter,city">合肥</a><a href="#" track="373filter,city">福州</a><a href="#" track="373filter,city">青岛</a><a href="#" track="373filter,city">大连</a><a href="#" track="373filter,city">沈阳</a><a href="#" track="373filter,city">石家庄</a><a href="#" track="373filter,city">珠海</a><a href="#" track="373filter,city">南昌</a><a href="#" track="373filter,city">无锡</a><a href="#" track="373filter,city">太原</a><a href="#" track="373filter,city">哈尔滨</a><a href="#" track="373filter,city">南宁</a><a href="#" track="373filter,city">宁波</a><a href="#" track="373filter,city">昆明</a><a href="#" track="373filter,city">东莞</a><a href="#" track="373filter,city">贵阳</a><a href="#" track="373filter,city">美国</a><a href="#" track="373filter,city">温州</a><a href="#" track="373filter,city">长春</a><a href="#" track="373filter,city">佛山</a><a href="#" track="373filter,city">常州</a><a href="#" track="373filter,city">呼和浩特</a><a href="#" track="373filter,city">兰州</a><a href="#" track="373filter,city">乌鲁木齐</a><a href="#" track="373filter,city">中山</a><a href="#" track="373filter,city">汕头</a><a href="#" track="373filter,city">海口</a><a href="#" track="373filter,city">烟台</a><a href="#" track="373filter,city">嘉兴</a><a href="#" track="373filter,city">赣州</a><a href="#" track="373filter,city">绍兴</a><a href="#" track="373filter,city">泉州</a><a href="#" track="373filter,city">香港</a><a href="#" track="373filter,city">徐州</a><a href="#" track="373filter,city">桂林</a><a href="#" track="373filter,city">洛阳</a>            
+                          </div>
+                      </div>
+                      <span class="filter-more J_FilterMore">更多</span>
+                  </div>
+                  <div class="filter-box clearfix">
+                      <span class="filter-title">其他</span>
+                      <div class="filter-content">
+                          <span style="margin-left: 15px;">排序</span>
+                          <div class="ui selection dropdown">
+                              <input type="hidden" name="filter_sort">
+                              <i class="dropdown icon"></i>
+                                  <div class="default text">默认</div>                
+                                  <div class="menu">
+                                      <a class="item active" href="#">默认</a>
+                                      <a class="item " href="#?sort=1" track="373filter,order">评价从高到低</a>
+                                      <a class="item " href="#?sort=2" track="373filter,order">价格从高到低</a>
+                                      <a class="item " href="#?sort=6" track="373filter,order">价格从低到高</a>
+                                      <a class="item " href="#?sort=7" track="373filter,order">最近有空</a>
+                                  </div>
+                          </div>
+                          <span>自由职业</span>
+                          <div class="ui selection dropdown">
+                              <input type="hidden" name="work_status">
+                              <i class="dropdown icon"></i>
+                                  <div class="default text">不限</div>                
+                                      <div class="menu">
+                                          <a class="item active" href="#">不限</a>
+                                          <a class="item " href="#" track="373filter,freelancer">是</a>
+                                      </div>
+                          </div>
+                          <span>认证开发者</span>
+                          <div class="ui selection dropdown">
+                              <input type="hidden" name="good_user">
+                              <i class="dropdown icon"></i>
+                                  <div class="default text">优质开发者</div>                
+                                      <div class="menu">
+                                          <a class="item active" href="#">不限</a>
+                                          <a class="item " href="#?verified=1" track="373filter,top">优质开发者</a>
+                                          <a class="item " href="#?verified=4" track="373filter,1980">普通开发者</a>
+                                      </div>
+                                  </div>
+                          </div>
+                  </div>
+              </div>
+              <!--人才列表-->
+              <div class="rck01">
+                  <div class="rck02">
+                      <img src="../images/avatar.png" class="touxiang">
+                      <div class="xinxi">
+                          <span class="xinxi01"><a href="person.html"><strong>李华</strong></a></span>
+                          <a href="xm2_5a.html"><button type="button" class="btn btn-success btn-sm add"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><strong>+添加到项目成员列表</strong></font></font></button></a>
+                          <span class="xinxi02"><strong>项目匹配度：</strong>90%</span>
+                          <span class="xinxi03"><strong>html：</strong>3级</span>
+                          <span class="xinxi04"><strong>工作经验：</strong>2-3年</span>
+                          <span class="xinxi05"><strong>工作地点：</strong>杭州</span>
+                          <button type="button" class="btn btn-primary btn-sm xinxi06" id="jianli"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><strong>个人简历</strong></font></font></button>
+                          <button type="button" class="btn btn-primary btn-sm xinxi07" id="zonghe"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><strong>综合评估</strong></font></font></button>
+                      </div>
+                  </div>
+                  <div class="rck03">
+                      <img src="../images/avatar2.png" class="touxiang">
+                      <div class="xinxi">
+                          <span class="xinxi01"><a href="person.html"><strong>王明</strong></a></span>
+                          <button type="button" class="btn btn-success btn-sm add"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><strong>+添加到项目成员列表</strong></font></font></button>
+                          <span class="xinxi02"><strong>项目匹配度：</strong>85%</span>
+                          <span class="xinxi03"><strong>javascript：</strong>3级</span>
+                          <span class="xinxi04"><strong>工作经验：</strong>1-2年</span>
+                          <span class="xinxi05"><strong>工作地点：</strong>杭州</span>
+                          <button type="button" class="btn btn-primary btn-sm xinxi06"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><strong>个人简历</strong></font></font></button>
+                          <button type="button" class="btn btn-primary btn-sm xinxi07"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><strong>综合评估</strong></font></font></button>
+                      </div>
+                  </div>
+                  <div class="rck04">
+                      <img src="../images/avatar3.png" class="touxiang">
+                      <div class="xinxi">
+                          <span class="xinxi01"><a href="person.html"><strong>赵爽</strong></a></span>
+                          <button type="button" class="btn btn-success btn-sm add"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><strong>+添加到项目成员列表</strong></font></font></button>
+                          <span class="xinxi02"><strong>项目匹配度：</strong>92%</span>
+                          <span class="xinxi03"><strong>css：</strong>3级</span>
+                          <span class="xinxi04"><strong>工作经验：</strong>3-4年</span>
+                          <span class="xinxi05"><strong>工作地点：</strong>杭州</span>
+                          <button type="button" class="btn btn-primary btn-sm xinxi06"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><strong>个人简历</strong></font></font></button>
+                          <button type="button" class="btn btn-primary btn-sm xinxi07"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><strong>综合评估</strong></font></font></button>
+                      </div>
+                  </div>                 
+                  <div class="rck05">
+                      <img src="../images/avatar04.png" class="touxiang">
+                      <div class="xinxi">
+                          <span class="xinxi01"><a href="person.html"><strong>陈正</strong></a></span>
+                          <button type="button" class="btn btn-success btn-sm add"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><strong>+添加到项目成员列表</strong></font></font></button>
+                          <span class="xinxi02"><strong>项目匹配度：</strong>88%</span>
+                          <span class="xinxi03"><strong>html：</strong>3级</span>
+                          <span class="xinxi04"><strong>工作经验：</strong>2-3年</span>
+                          <span class="xinxi05"><strong>工作地点：</strong>杭州</span>
+                          <button type="button" class="btn btn-primary btn-sm xinxi06"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><strong>个人简历</strong></font></font></button>
+                          <button type="button" class="btn btn-primary btn-sm xinxi07"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><strong>综合评估</strong></font></font></button>
+                      </div>
+                  </div>
+                  <div class="rck06">
+                      <img src="../images/avatar5.png" class="touxiang">
+                      <div class="xinxi">
+                          <span class="xinxi01"><a href="person.html"><strong>王福</strong></a></span>
+                          <button type="button" class="btn btn-success btn-sm add"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><strong>+添加到项目成员列表</strong></font></font></button>
+                          <span class="xinxi02"><strong>项目匹配度：</strong>91%</span>
+                          <span class="xinxi03"><strong>css：</strong>3级</span>
+                          <span class="xinxi04"><strong>工作经验：</strong>3-4年</span>
+                          <span class="xinxi05"><strong>工作地点：</strong>杭州</span>
+                          <button type="button" class="btn btn-primary btn-sm xinxi06"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><strong>个人简历</strong></font></font></button>
+                          <button type="button" class="btn btn-primary btn-sm xinxi07"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><strong>综合评估</strong></font></font></button>
+                      </div>
+                  </div>
+                  <div class="rck07">
+                      <img src="../images/avatar.png" class="touxiang">
+                      <div class="xinxi">
+                          <span class="xinxi01"><a href="person.html"><strong>刘壮</strong></a></span>
+                          <button type="button" class="btn btn-success btn-sm add"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><strong>+添加到项目成员列表</strong></font></font></button>
+                          <span class="xinxi02"><strong>项目匹配度：</strong>90%</span>
+                          <span class="xinxi03"><strong>javascript：</strong>3级</span>
+                          <span class="xinxi04"><strong>工作经验：</strong>3-4年</span>
+                          <span class="xinxi05"><strong>工作地点：</strong>杭州</span>
+                          <button type="button" class="btn btn-primary btn-sm xinxi06"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><strong>个人简历</strong></font></font></button>
+                          <button type="button" class="btn btn-primary btn-sm xinxi07"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><strong>综合评估</strong></font></font></button>
+                      </div>
+                  </div>
+                  <div class="rck08">
+                      <a href="#"><span>1</span></a>
+                      <a href="#"><span>2</span></a>
+                      <a href="#"><span>3</span></a>
+                      <a href="#"><span>4</span></a>
+                      <a href="#"><span>5</span></a>
+                      <a href="#"><span>下一页</span></a>
+                      <a href="#"><span style="border-right:0px">...</span></a>
+                  </div>
+              </div>
+
+
+          </div>
+      </section>
+
+<!-- REQUIRED JS SCRIPTS -->
+<!-- jQuery 3 -->
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../js/adminlte.min.js"></script>
+
+<script src="../js/clue-api.min.js"></script>
+<script src="../js/desktop-fiesta-3r1wgtzrlix2bj4i.js"></script>
+<script src="../js/hm.js"></script>
+<script src="../js/inn.js"></script>
+<script src="../js/meiqia.js"></script>
+<script src="../js/seajs-config.js"></script>
+<script src="../layer.js"></script>
+<script>
+$('#jianli').on('click', function(){
+    layer.open({
+      type: 2,
+      area: ['800px', '600px'],
+      shadeClose: true, //点击遮罩关闭
+      content: 'person_tj.html'
+    });
+  });
+$('#zonghe').on('click', function(){
+    layer.open({
+      type: 2,
+      area: ['800px', '450px'],
+      shadeClose: true, //点击遮罩关闭
+      content: 'zonghe_tj.html'
+    });
+  });
+</script>
+
+
+
+
+<script>
+    seajs.use('https://innsta.b0.upaiyun.com/js/inn/page/userindex.js');
+    seajs.use('user/contrast');
+</script>
+
+
+</body>
+</html>

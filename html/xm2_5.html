@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>众包服务管理系统</title>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../bower_components/Ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="../bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+  <link rel="stylesheet" href="../css/AdminLTE.min.css">
+  <link rel="stylesheet" href="../css/skins/skin-blue.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  <link rel="stylesheet" href="../css/xm2_5.css">
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+
+    <section class="content-header" id="xmhead">
+        <h1><i class="fa fa-tasks"></i>图片汇项目外包</h1>
+        <ul>
+            <li class=""><a href="xm2_1_0.html">看板视图</a></li>
+            <li class="head07"><a href="xm2_7.html">任务列表</a></li>
+            <li class=""><a href="xm2_2.html">工作日历</a></li>
+            <li class=""><a href="../sc/index.html">甘特图</a></li>
+            <li class=""><a href="xm2_4.html">附件</a></li>
+            <li class="head05"><a href="xm2_5.html">成员</a></li>
+            <!--<li class=""><a href="xm2_6.html">简报</a></li>-->
+        </ul>
+    </section>
+
+    <section class="content container-fluid">
+        <div class="xm00">
+          <div class="row">
+            <div class="col-sm-12">
+                <div class="box">
+                  <div class="box-header">
+                  </div>
+                  <!-- /.box-header -->
+                  <div class="box-body">
+                    <table id="example1" class="table table-bordered table-striped">
+                      <thead>
+                      <tr>
+                        <th>ID</th>
+                        <th>姓名</th>
+                        <th>身份</th>
+                        <th>权限</th>
+                        <th>最后一次登录IP</th>
+                        <th>上一次登录时间</th>
+                        <th>常用操作</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr id="row1">
+                        <td>2018001</td>
+                        <td>李华</td>
+                        <td>设计师</td>
+                        <td id="permission">E</td>
+                        <td>--<!-- 127.0.0.1 --></td>
+                        <td>--<!-- 2018-03-26 --></td>
+                        <td>
+                            <button type="button" class="btn btn-block btn-success btn-xs" id="caozuo01"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">编辑</font></font></button>
+                            <!-- <button type="button" onclick="myFunction1()" class="btn btn-block btn-info btn-xs" id="caozuo02"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">授权</font></font></button>
+                            <button type="button" onclick="myFunction2()" class="btn btn-block btn-warning btn-xs" id="caozuo03"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">禁用</font></font></button> -->
+                            <button type="button" onclick="myFunction3()" class="btn btn-block btn-danger btn-xs" id="caozuo04"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">删除</font></font></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2018002</td>
+                        <td>赵爽</td>
+                        <td>图片处理师</td>
+                        <td id="permission">E</td>
+                        <td>--<!-- 127.0.0.2 --></td>
+                        <td>--<!-- 2018-03-26 --></td>
+                        <td>
+                            <button type="button" class="btn btn-block btn-success btn-xs" id="caozuo01"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">编辑</font></font></button>
+                            <!-- <button type="button" onclick="myFunction1()" class="btn btn-block btn-info btn-xs" id="caozuo02"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">授权</font></font></button>
+                            <button type="button" onclick="myFunction2()" class="btn btn-block btn-warning btn-xs" id="caozuo03"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">禁用</font></font></button> -->
+                            <button type="button" onclick="myFunction3()" class="btn btn-block btn-danger btn-xs" id="caozuo04"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">删除</font></font></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2018003</td>
+                        <td>孙晓</td>
+                        <td>设计师</td>
+                        <td id="permission">E</td>
+                        <td>--<!-- 127.0.0.3 --></td>
+                        <td>--<!-- 2018-03-26 --></td>
+                        <td>
+                            <button type="button" class="btn btn-block btn-success btn-xs" id="caozuo01"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">编辑</font></font></button>
+                            <!-- <button type="button" onclick="myFunction1()" class="btn btn-block btn-info btn-xs" id="caozuo02"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">授权</font></font></button>
+                            <button type="button" onclick="myFunction2()" class="btn btn-block btn-warning btn-xs" id="caozuo03"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">禁用</font></font></button> -->
+                            <button type="button" onclick="myFunction3()" class="btn btn-block btn-danger btn-xs" id="caozuo04"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">删除</font></font></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2018004</td>
+                        <td>张顺</td>
+                        <td>设计师</td>
+                        <td id="permission">E</td>
+                        <td>--<!-- 127.0.0.4 --></td>
+                        <td>--<!-- 2018-03-26 --></td>
+                        <td>
+                            <button type="button" class="btn btn-block btn-success btn-xs" id="caozuo01"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">编辑</font></font></button>
+                            <!-- <button type="button" onclick="myFunction1()" class="btn btn-block btn-info btn-xs" id="caozuo02"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">授权</font></font></button>
+                            <button type="button" onclick="myFunction2()" class="btn btn-block btn-warning btn-xs" id="caozuo03"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">禁用</font></font></button> -->
+                            <button type="button" onclick="myFunction3()" class="btn btn-block btn-danger btn-xs" id="caozuo04"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">删除</font></font></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2018005</td>
+                        <td>王明</td>
+                        <td>设计师</td>
+                        <td id="permission">E</td>
+                        <td>--<!-- 127.0.0.5 --></td>
+                        <td>--<!-- 2018-03-26 --></td>
+                        <td>
+                            <button type="button" class="btn btn-block btn-success btn-xs" id="caozuo01"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">编辑</font></font></button>
+                           <!--  <button type="button" onclick="myFunction1()" class="btn btn-block btn-info btn-xs" id="caozuo02"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">授权</font></font></button>
+                            <button type="button" onclick="myFunction2()" class="btn btn-block btn-warning btn-xs" id="caozuo03"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">禁用</font></font></button> -->
+                            <button type="button" onclick="myFunction3()" class="btn btn-block btn-danger btn-xs" id="caozuo04"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">删除</font></font></button>
+                        </td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- /.box-body -->
+                </div>
+            </div>
+           </div>  
+              </div>
+    </section>
+
+
+
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="../bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<script src="../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<script src="../bower_components/fastclick/lib/fastclick.js"></script>
+<script src="../js/adminlte.min.js"></script>
+<script src="../js/demo.js"></script>
+<!-- page script -->
+<script>
+  $(function () {
+    $('#example1').DataTable()
+    $('#example2').DataTable({
+      'paging'      : true,
+      'lengthChange': false,
+      'searching'   : false,
+      'ordering'    : true,
+      'info'        : true,
+      'autoWidth'   : false
+    })
+  })
+</script>
+<script>
+function myFunction1(){
+  x=document.getElementById("permission");  // 找到元素
+  x.innerHTML="授权";    // 改变内容
+}
+function myFunction2(){
+  x=document.getElementById("permission");  // 找到元素
+  x.innerHTML="禁用";    // 改变内容
+}
+function myFunction3(){
+  x=document.getElementById("row1");  // 找到元素
+  x.innerHTML="";    // 改变内容
+}
+document.getElementById("caozuo02").addEventListener("click", function(){
+     alert("已授权");
+ });
+ document.getElementById("caozuo03").addEventListener("click", function(){
+     alert("已禁用");
+ });
+ document.getElementById("caozuo04").addEventListener("click", function(){
+     alert("已删除");
+ });
+</script>
+</body>
+</html>

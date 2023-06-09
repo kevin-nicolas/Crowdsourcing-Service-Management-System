@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>众包服务管理系统</title>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../bower_components/Ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="../bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+  <link rel="stylesheet" href="../css/AdminLTE.min.css">
+  <link rel="stylesheet" href="../css/skin-blue.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  <link rel="stylesheet" href="../css/xm2_6.css">
+  <link rel="stylesheet" href="../css/xm2_5.css">
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+
+    <section class="content-header">
+        
+    </section>
+
+    <!-- Main content -->
+    <section class="content container-fluid">
+        <div class="xm00">
+          <div class="jianbao">
+            <a href="rb_write.html" class="ribao00">
+              <div class="ribao">
+                <img src="../images/icon-tpl-daily.png" class="ribao_icon">
+                <p class="ribao_p">日报</p>
+              </div>
+            </a>
+            <a href="#" class="zhoubao00">
+              <div class="zhoubao">
+                  <img src="../images/icon-tpl-weekly.png" class="zhoubao_icon">
+                  <p class="zhoubao_p">周报</p>
+              </div>
+            </a>
+            <a href="#" class="yuebao00">
+              <div class="yuebao">
+                  <img src="../images/icon-tpl-monthly.png" class="yuebao_icon">
+                  <p class="yuebao_p">月报</p>
+              </div>
+            </a>
+          </div>
+            <div class="row">
+            <div class="col-sm-12">
+                <div class="box">
+                  <div class="box-header">
+                  </div>
+                  <!-- /.box-header -->
+                  <div class="box-body">
+                    <table id="example1" class="table table-bordered table-striped">
+                      <thead>
+                      <tr>
+                        <th>简报周期</th>
+                        <th>提交时间</th>
+                        <th>提交者</th>
+                        <th>状态</th>
+                        <th>类型</th>
+                        <th>常用操作</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                        <td>2018年4月7日</td>
+                        <td>2018年4月7日</td>
+                        <td>Thomas</td>
+                        <td id="permission">已提交</td>
+                        <td>日报</td>
+                        <td>
+                            <button type="button" class="btn btn-block btn-success btn-xs" id="caozuo01"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">查看</font></font></button>
+                            <button type="button" onclick="myFunction1()" class="btn btn-block btn-info btn-xs" id="caozuo02"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下载</font></font></button>
+                            <button type="button" onclick="myFunction2()" class="btn btn-block btn-warning btn-xs" id="caozuo03"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">编辑</font></font></button>
+                            <button type="button" onclick="myFunction3()" class="btn btn-block btn-danger btn-xs" id="caozuo04"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">删除</font></font></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2018年4月6日</td>
+                        <td>2018年4月6日</td>
+                        <td>Randle</td>
+                        <td id="permission">已提交</td>
+                        <td>日报</td>
+                        <td>
+                            <button type="button" class="btn btn-block btn-success btn-xs" id="caozuo01"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">查看</font></font></button>
+                            <button type="button" onclick="myFunction1()" class="btn btn-block btn-info btn-xs" id="caozuo02"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下载</font></font></button>
+                            <button type="button" onclick="myFunction2()" class="btn btn-block btn-warning btn-xs" id="caozuo03"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">编辑</font></font></button>
+                            <button type="button" onclick="myFunction3()" class="btn btn-block btn-danger btn-xs" id="caozuo04"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">删除</font></font></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2018年4月5日</td>
+                        <td>2018年4月5日</td>
+                        <td>Kuzma</td>
+                        <td id="permission">已提交</td>
+                        <td>日报</td>
+                        <td>
+                            <button type="button" class="btn btn-block btn-success btn-xs" id="caozuo01"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">查看</font></font></button>
+                            <button type="button" onclick="myFunction1()" class="btn btn-block btn-info btn-xs" id="caozuo02"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下载</font></font></button>
+                            <button type="button" onclick="myFunction2()" class="btn btn-block btn-warning btn-xs" id="caozuo03"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">编辑</font></font></button>
+                            <button type="button" onclick="myFunction3()" class="btn btn-block btn-danger btn-xs" id="caozuo04"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">删除</font></font></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2018年4月4日</td>
+                        <td>2018年4月4日</td>
+                        <td>Hart</td>
+                        <td id="permission">已提交</td>
+                        <td>日报</td>
+                        <td>
+                            <button type="button" class="btn btn-block btn-success btn-xs" id="caozuo01"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">查看</font></font></button>
+                            <button type="button" onclick="myFunction1()" class="btn btn-block btn-info btn-xs" id="caozuo02"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下载</font></font></button>
+                            <button type="button" onclick="myFunction2()" class="btn btn-block btn-warning btn-xs" id="caozuo03"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">编辑</font></font></button>
+                            <button type="button" onclick="myFunction3()" class="btn btn-block btn-danger btn-xs" id="caozuo04"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">删除</font></font></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2018年4月3日</td>
+                        <td>2018年4月3日</td>
+                        <td>Ball</td>
+                        <td id="permission">已提交</td>
+                        <td>日报</td>
+                        <td>
+                            <button type="button" class="btn btn-block btn-success btn-xs" id="caozuo01"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">查看</font></font></button>
+                            <button type="button" onclick="myFunction1()" class="btn btn-block btn-info btn-xs" id="caozuo02"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下载</font></font></button>
+                            <button type="button" onclick="myFunction2()" class="btn btn-block btn-warning btn-xs" id="caozuo03"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">编辑</font></font></button>
+                            <button type="button" onclick="myFunction3()" class="btn btn-block btn-danger btn-xs" id="caozuo04"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">删除</font></font></button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2018年4月2日</td>
+                        <td>2018年4月2日</td>
+                        <td>Bryant</td>
+                        <td id="permission">已提交</td>
+                        <td>日报</td>
+                        <td>
+                            <button type="button" class="btn btn-block btn-success btn-xs" id="caozuo01"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">查看</font></font></button>
+                            <button type="button" onclick="myFunction1()" class="btn btn-block btn-info btn-xs" id="caozuo02"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下载</font></font></button>
+                            <button type="button" onclick="myFunction2()" class="btn btn-block btn-warning btn-xs" id="caozuo03"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">编辑</font></font></button>
+                            <button type="button" onclick="myFunction3()" class="btn btn-block btn-danger btn-xs" id="caozuo04"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">删除</font></font></button>
+                        </td>
+                      </tr><tr>
+                        <td><strong>2018年第12周</strong><br>2018年3月26日-2018年4月1日</td>
+                        <td>2018年4月2日</td>
+                        <td>Bryant</td>
+                        <td id="permission">已提交</td>
+                        <td>周报</td>
+                        <td>
+                            <button type="button" class="btn btn-block btn-success btn-xs" id="caozuo01"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">查看</font></font></button>
+                            <button type="button" onclick="myFunction1()" class="btn btn-block btn-info btn-xs" id="caozuo02"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下载</font></font></button>
+                            <button type="button" onclick="myFunction2()" class="btn btn-block btn-warning btn-xs" id="caozuo03"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">编辑</font></font></button>
+                            <button type="button" onclick="myFunction3()" class="btn btn-block btn-danger btn-xs" id="caozuo04"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">删除</font></font></button>
+                        </td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- /.box-body -->
+                </div>
+            </div>
+           </div>  
+		    </div>
+    </section>
+
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="../bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<script src="../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<script src="../bower_components/fastclick/lib/fastclick.js"></script>
+<script src="../js/adminlte.min.js"></script>
+<script src="../js/demo.js"></script>
+<script>
+  $(function () {
+    $('#example1').DataTable()
+    $('#example2').DataTable({
+      'paging'      : true,
+      'lengthChange': false,
+      'searching'   : false,
+      'ordering'    : true,
+      'info'        : true,
+      'autoWidth'   : false
+    })
+  })
+</script>
+</body>
+</html>

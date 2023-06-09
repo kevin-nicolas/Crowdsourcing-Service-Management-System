@@ -1,0 +1,208 @@
+#xmhead{
+	background-color:white;
+	height:106px;
+}
+#xmhead ul li{	
+	height:45px;
+	line-height:45px;
+	width:80px;
+	float:left;
+	margin-left:30px;
+	text-align:center;
+	list-style-type:none;
+}
+#xmhead ul li:hover{
+	border-bottom:3px solid #3C8DBC;
+}
+.head02{
+	border-bottom:3px solid #3C8DBC;
+}
+#xmhead ul li a{
+	color:black;
+	text-decoration:none;
+}
+#xm00{
+	width:1119px;
+	margin:0px auto;
+}
+.tongji01{
+	width:1050px;
+	height:250px;
+	margin:0px auto;
+	background-color:white;
+}
+.tongji01_1{
+	width:70px;
+	text-align: center;
+	border-left:3px solid #3C8DBC;
+	margin:10px 0 0 10px;
+}
+.tongji01_2{
+	margin-top:30px;
+}
+.tongji01_2_lable{
+	color:#00c0ef;
+	width:180px;
+	padding:0 20px 0 20px;
+	text-align:center;
+	border-radius:5px;
+	border:1px solid #00c0ef;
+}
+.tongji01_3{
+	margin-top:30px;
+	border-right:2px solid #EEEEEE;
+}
+.tongji01_3_lable{
+	color:#f56954;
+	width:180px;
+	padding:0 20px 0 20px;
+	text-align:center;
+	border-radius:5px;
+	border:1px solid #f56954;
+}
+.tongji01_4{
+	float:left;
+	height:100px;
+	width:120px;
+	margin-left:10px;
+	margin-top:40px;
+}
+.tongji01_4a{
+	width:80px;
+	text-align:center;
+	float:left;
+	margin-top:20px;
+	margin-left:20px;
+}
+.tongji01_4b{
+	color:#968888;
+	width:80px;
+	text-align:center;
+	font-size:55px;
+	height:50px;
+	line-height:50px;
+	float:left;
+	clear:both;
+	margin-top:0px;
+	margin-left:20px;
+}
+.tongji01_5{
+	float:left;
+	height:100px;
+	width:120px;
+	margin-left:10px;
+	margin-top:40px;
+}
+.tongji01_5a{
+	width:80px;
+	text-align:center;
+	float:left;
+	margin-top:20px;
+	margin-left:20px;
+}
+.tongji01_5b{
+	width:80px;
+	text-align:center;
+	color:#f56954;
+	font-size:55px;
+	height:50px;
+	line-height:50px;
+	float:left;
+	clear:both;
+	margin-top:0px;
+	margin-left:20px;
+}
+.tongji01_6{
+	float:left;
+	height:100px;
+	width:120px;
+	margin-left:10px;
+	margin-top:40px;
+}
+.tongji01_6a{
+	width:80px;
+	text-align:center;
+	float:left;
+	margin-top:20px;
+	margin-left:20px;
+}
+.tongji01_6b{
+	color:#22D7BB;
+	width:80px;
+	text-align:center;
+	font-size:55px;
+	height:50px;
+	line-height:50px;
+	float:left;
+	clear:both;
+	margin-top:0px;
+	margin-left:20px;
+}
+.tongji01_7{
+	float:left;
+	height:100px;
+	width:120px;
+	margin-left:10px;
+	margin-top:40px;
+}
+.tongji01_7a{
+	width:80px;
+	text-align:center;
+	float:left;
+	margin-top:20px;
+	margin-left:20px;
+}
+.tongji01_7b{
+	color:#968888;
+	width:80px;
+	text-align:center;
+	font-size:55px;
+	height:50px;
+	line-height:50px;
+	float:left;
+	clear:both;
+	margin-top:0px;
+	margin-left:20px;
+}
+.tongji02{
+	width:1100px;
+	height:800px;
+	margin:10px auto;
+}
+.tongji02_1{
+	width:515px;
+	float:left;
+	margin-left:25px;
+}
+.tongji02_2{
+	width:515px;
+	float:left;
+	margin-left:20px;
+}
+.tongji02_3{
+	width:515px;
+	float:left;
+	clear:both;
+	margin-left:25px;
+}
+.tongji02_4{
+	width:515px;
+	float:left;
+	margin-left:20px;
+}
+.tongji02_1a{
+	float:left;
+}
+.tongji02_1b{
+	float:right;
+	width:200px;
+	text-align:center;
+}
+.tongji02_2a{
+	float:left;
+}
+.tongji02_2b{
+	float:right;
+	width:200px;
+	text-align:center;
+}

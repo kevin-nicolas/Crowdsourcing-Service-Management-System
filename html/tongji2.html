@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>众包服务管理系统</title>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../bower_components/Ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="../css/AdminLTE.min.css">
+  <link rel="stylesheet" href="../css/skin-blue.min.css">
+  <link rel="stylesheet" href="../bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  <style>
+    body{
+      background-color:#EEEEEE;
+    }
+    #xmhead{
+      height:70px;
+      background-color:white;
+    }
+  </style>
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+    <section class="content-header" id="xmhead">
+      <h1>
+        <i class="fa fa-line-chart"></i> 项目进度统计
+      </h1>
+    </section>
+    <section class="content container-fluid">
+        <div class="xm00">
+          <div class="row">
+            <div class="col-sm-12">
+                <div class="box">
+                  <div class="box-header">
+                  </div>
+                  <!-- /.box-header -->
+                  <div class="box-body">
+                    <table id="example1" class="table table-bordered table-striped">
+                      <thead>
+                      <tr>
+                        <th>项目</th>
+                        <th>开始时间</th>
+                        <th>结束时间</th>
+                        <th>负责人</th>
+                        <th>状态</th>
+                        <th>待完成</th>
+                        <th>已完成</th>
+                        <th>项目进度</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                        <td>图片汇外包项目</td>
+                        <td>2018-4-12</td>
+                        <td>2018-6-18</td>
+                        <td>小王</td>
+                        <td>进行中</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>
+                          <div class="progress progress-sm active">
+                            <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>春语外包项目</td>
+                        <td>2018-4-12</td>
+                        <td>2018-6-18</td>
+                        <td>小王</td>
+                        <td>已完成</td>
+                        <td>0</td>
+                        <td>5</td>
+                        <td>
+                          <div class="progress progress-sm active">
+                            <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>夏语外包项目</td>
+                        <td>2018-4-12</td>
+                        <td>2018-6-18</td>
+                        <td>小王</td>
+                        <td>进行中</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>
+                          <div class="progress progress-sm active">
+                            <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>秋语外包项目</td>
+                        <td>2018-4-12</td>
+                        <td>2018-6-18</td>
+                        <td>小王</td>
+                        <td>进行中</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>
+                          <div class="progress progress-sm active">
+                            <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>冬语外包项目</td>
+                        <td>2018-4-12</td>
+                        <td>2018-6-18</td>
+                        <td>小王</td>
+                        <td>进行中</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>
+                          <div class="progress progress-sm active">
+                            <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>花香外包项目</td>
+                        <td>2018-4-12</td>
+                        <td>2018-6-18</td>
+                        <td>小王</td>
+                        <td>组队中</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>
+                          <div class="progress progress-sm active">
+                            <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>花红外包项目</td>
+                        <td>2018-4-12</td>
+                        <td>2018-6-18</td>
+                        <td>小王</td>
+                        <td>组队中</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>
+                          <div class="progress progress-sm active">
+                            <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>柳绿外包项目</td>
+                        <td>2018-4-12</td>
+                        <td>2018-6-18</td>
+                        <td>小王</td>
+                        <td>组队中</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>
+                          <div class="progress progress-sm active">
+                            <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+                            </div>
+                          </div>
+                        </td>
+                      </tr>
+                      
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- /.box-body -->
+                </div>
+            </div>
+           </div>  
+              </div>
+    </section>  
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="../bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<script src="../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<script src="../bower_components/fastclick/lib/fastclick.js"></script>
+<script src="../js/adminlte.min.js"></script>
+<script src="../js/demo.js"></script>
+<!-- page script -->
+<script>
+  $(function () {
+    $('#example1').DataTable()
+    $('#example2').DataTable({
+      'paging'      : true,
+      'lengthChange': false,
+      'searching'   : false,
+      'ordering'    : true,
+      'info'        : true,
+      'autoWidth'   : false
+    })
+  })
+</script>
+</body>
+</html>

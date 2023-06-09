@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>众包服务管理系统</title>
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../bower_components/Ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="../css/AdminLTE.min.css">
+  <link rel="stylesheet" href="../css/skin-blue.min.css">
+  <link rel="stylesheet" href="../bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  <style>
+    body{
+      background-color:#EEEEEE;
+    }
+    #xmhead{
+      height:70px;
+      background-color:white;
+    }
+  </style>
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+    <section class="content-header" id="xmhead">
+      <h1>
+        <i class="fa fa-line-chart"></i> 成员进度统计
+      </h1>
+    </section>
+    <section class="content container-fluid">
+        <div class="xm00">
+          <div class="row">
+            <div class="col-sm-12">
+                <div class="box">
+                  <div class="box-header">
+                  </div>
+                  <!-- /.box-header -->
+                  <div class="box-body">
+                    <table id="example1" class="table table-bordered table-striped">
+                      <thead>
+                      <tr>
+                        <th>成员</th>
+                        <th>项目数</th>
+                        <th>待完成</th>
+                        <th>已延期</th>
+                        <th>已完成</th>
+                        <th>任务总数</th>
+                        <th>延期率</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                        <td>小李</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>0</td>                   
+                      </tr>
+
+                      <tr>
+                        <td>小红</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>0</td>                   
+                      </tr>
+
+                      <tr>
+                        <td>小杨</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>0</td>                   
+                      </tr>
+
+                      <tr>
+                        <td>小施</td>
+                        <td>1</td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>2</td>
+                        <td>0</td>                   
+                      </tr>
+                      
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- /.box-body -->
+                </div>
+            </div>
+           </div>  
+              </div>
+    </section>  
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../bower_components/datatables.net/js/jquery.dataTables.min.js"></script>
+<script src="../bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+<script src="../bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<script src="../bower_components/fastclick/lib/fastclick.js"></script>
+<script src="../js/adminlte.min.js"></script>
+<script src="../js/demo.js"></script>
+<!-- page script -->
+<script>
+  $(function () {
+    $('#example1').DataTable()
+    $('#example2').DataTable({
+      'paging'      : true,
+      'lengthChange': false,
+      'searching'   : false,
+      'ordering'    : true,
+      'info'        : true,
+      'autoWidth'   : false
+    })
+  })
+</script>
+</body>
+</html>

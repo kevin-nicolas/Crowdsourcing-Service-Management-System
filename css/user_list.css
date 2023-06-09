@@ -1,0 +1,745 @@
+body {
+
+}
+
+#main-wrap .users-tips {
+	padding: 15px 0 20px;
+	text-align: center;
+	background: #fff
+}
+
+#main-wrap .users-tips li:not(:last-child) {
+	margin-bottom: 20px
+}
+
+#main-wrap .users-tips a {
+
+	line-height: 30px;
+	padding: 0 15px;
+	margin: 0 10px;
+	background: #37a1f9;
+	color: #fff
+}
+
+#main-wrap .users-tips a.developers {
+	color: #37a1f9;
+	border: 1px solid #37a1f9;
+	background: #fff
+}
+
+#main-wrap .users-tips .count {
+	font-size: 24px;
+	color: #515151
+}
+
+#main-wrap .main-hd {
+	margin-bottom: 0;
+	padding: 20px 0;
+	border: 1px solid #f1f2f4;
+	line-height: 1;
+	background: #fff;
+	box-shadow: 2px 2px 5px #d9d9d9
+}
+
+#main-wrap .main-hd .checkbox.verified.checked label:after {
+	color: #fff;
+	background: #2994f2;
+	font-size: 12px
+}
+
+#main-wrap .main-hd .ping-link {
+	font-size: 14px;
+	margin-right: 55px
+}
+
+#main-wrap .main-hd .ping-link.safari {
+	line-height: 65px
+}
+
+#main-wrap .main-bd {
+	margin-top: 0;
+	border-radius: 0
+}
+
+#footer {
+	margin-top: 0
+}
+
+.proginn-user-list {
+	margin-top: 0!important
+}
+
+.proginn-user-list .user-avatar {
+	position: relative;
+	text-align: center
+}
+
+.proginn-user-list .user-avatar a {
+	color: #333
+}
+
+.proginn-user-list .user-avatar .verify-badge {
+	position: absolute;
+	right: 0;
+	top: 60px;
+	line-height: 1;
+	padding: 2px 4px;
+	border-radius: 9px;
+	background-color: #258fe7;
+	text-align: center;
+	color: #fff;
+	font-size: 12px
+}
+
+.proginn-user-list .user-avatar .inn-badge {
+	top: 60px;
+	padding: 3px 6px;
+	border: 2px solid #fff
+}
+
+.proginn-user-list .user-avatar .user-name {
+	margin: 10px 0;
+	word-wrap: break-word;
+	word-break: break-all;
+	font-size: 14px;
+	text-align: center
+}
+
+.proginn-user-list .user-avatar .signed-tag {
+	width: 50px;
+	height: 20px;
+	line-height: 18px;
+	border-radius: 2px;
+	text-align: center;
+	border: 1px solid #2994f2;
+	color: #2994f2;
+	font-size: 12px
+}
+
+.proginn-user-list .user-info .title {
+	position: absolute;
+	top: 25px;
+	overflow: hidden;
+	line-height: 1
+}
+
+.proginn-user-list .user-info .info {
+	float: left;
+	color: #333;
+	font-size: 0
+}
+
+.proginn-user-list .user-info .info:hover {
+	color: #2994f2
+}
+
+.proginn-user-list .user-info .info span {
+	display: inline-block;
+	padding-right: 10px;
+	max-width: 380px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	font-size: 20px
+}
+
+.proginn-user-list .user-info .ui.label {
+	padding: .4em .8em;
+	float: left;
+	margin-right: 10px
+}
+
+.proginn-user-list .user-info .work-year {
+	float: left;
+	font-size: 20px
+}
+
+.proginn-user-list .user-info .grade {
+	color: #848484;
+	font-size: 12px
+}
+
+.proginn-user-list .user-info .desc-item {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	margin-bottom: 10px
+}
+
+.proginn-user-list .user-info .desc-item em {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	margin-right: 5px
+}
+
+.proginn-user-list .user-info .work-time .address {
+	margin-right: 50px
+}
+
+.proginn-search .proginn-user-list .item {
+	box-shadow: none!important
+}
+
+#main-wrap .ui.main-hd {
+	position: relative;
+	box-shadow: none
+}
+
+#widget-user-list.proginn-user-list .item {
+	position: relative;
+	min-height: inherit;
+	padding: 30px 20px!important;
+	background-color: #fff;
+	margin-bottom: 10px;
+	border: none;
+	box-shadow: 0 1px 2px rgba(0,0,0,.1)
+}
+
+#widget-user-list.proginn-user-list .item .user-info .description {
+	margin-top: 25px
+}
+
+#main-wrap .main-bd {
+	padding: 0
+}
+
+#widget-user-list .item {
+	min-height: 216px;
+	padding-top: 30px
+}
+
+#widget-user-list .user-avatar img {
+	width: 88px;
+	border-radius: 100%
+}
+
+#widget-user-list .user-info {
+	width: 690px;
+	margin-left: 20px;
+	padding-right: 38px
+}
+
+#widget-user-list .user-info .nickname {
+	color: #232323;
+	font-size: 20px
+}
+
+#widget-user-list .user-info .signed-tag {
+	width: 50px;
+	height: 20px;
+	margin: 0 15px;
+	line-height: 18px;
+	border-radius: 2px;
+	text-align: center;
+	border: 1px solid #2994f2;
+	color: #2994f2;
+	font-size: 12px
+}
+
+#widget-user-list .user-info .description {
+	margin-top: 15px;
+	font-size: 14px
+}
+
+#widget-user-list .user-info .description .introduction {
+	color: #848484
+}
+
+#widget-user-list .user-info .description .person-details {
+	margin-top: 18px;
+	line-height: 1.5;
+	color: #232323;
+	word-wrap: break-word;
+	word-break: break-all
+}
+
+#widget-user-list .user-info .description .work-time {
+	margin-top: 18px;
+	color: #848589
+}
+
+#widget-user-list .hire-info {
+	min-height: 115px;
+	margin-top: 30px;
+	padding-left: 44px;
+	border-left: 1px solid #dadfe5;
+	height: 100%;
+	text-align: center
+}
+
+#widget-user-list .hire-info p {
+	width: 104px;
+	font-size: 13px;
+	color: #848589
+}
+
+#widget-user-list .hire-info p.work-price {
+	margin-bottom: 20px;
+	font-size: 14px;
+	color: #2994f2
+}
+
+#widget-user-list .hire-info p.work-price .price {
+	font-size: 24px
+}
+
+#widget-user-list .hire-info .work-place {
+	margin-bottom: 13px;
+	line-height: 1.5
+}
+
+#widget-user-list .hire-info .hire-count,.inn-user-filter {
+	margin-bottom: 15px
+}
+
+#widget-user-list .hire-info .hire-btn {
+	background: #37a1f9;
+	color: #fff
+}
+
+#widget-user-list .hire-info .hire-btn.gray {
+	background: #E0E1E2;
+	margin-right: 0;
+	font-size: .9rem
+}
+
+.inn-user-filter {
+	padding: 20px;
+	border: 1px solid #f1f1f1;
+	background-color: #fff
+}
+
+.inn-user-filter .filter-box {
+	position: relative;
+	margin-bottom: 10px
+}
+
+.inn-user-filter .filter-box a,.inn-user-filter .filter-more,.inn-user-filter .filter-title {
+	padding: 7px 15px;
+	line-height: 1
+}
+
+.inn-user-filter .filter-title {
+	float: left
+}
+
+.inn-user-filter .filter-content {
+	position: relative;
+	float: left;
+	width: 880px;
+	color: #555;
+	border-bottom: 1px dotted #eee;
+	padding-bottom: 10px
+}
+
+.inn-user-filter .filter-content .list {
+	overflow: hidden;
+	height: 30px;
+	width: 90%
+}
+
+.inn-user-filter .filter-content .list.open {
+	height: auto
+}
+
+.inn-user-filter .filter-content .list a {
+	margin-bottom: 5px
+}
+
+.inn-user-filter .filter-content .sub-list {
+	border: 1px solid #eee;
+	background-color: #f7f7f7;
+	padding: 10px 15px;
+	margin-top: 5px;
+	width: 90%
+}
+
+.inn-user-filter .filter-content a {
+	float: left;
+	color: #555
+}
+
+.inn-user-filter .filter-content a:hover {
+	color: #2994f2
+}
+
+.inn-user-filter .filter-content a.on {
+	color: #555
+}
+
+.inn-user-filter .filter-content .ui.selection.dropdown {
+	min-width: 120px;
+	padding: 7px;
+	margin-left: 10px;
+	margin-right: 15px;
+	font-size: 12px
+}
+
+.inn-user-filter .filter-content .ui.selection.dropdown .menu>.item {
+	display: block;
+	width: 100%;
+	font-size: 12px
+}
+
+.inn-user-filter .filter-more {
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #999;
+	cursor: pointer
+}
+
+.users-action {
+	padding: 30px 0;
+	box-shadow: 0 1px 2px rgba(0,0,0,.1);
+	background: url(../../image/common/wave_bg.png) center bottom no-repeat #fff
+}
+
+.users-action .count {
+	margin-bottom: 10px;
+	line-height: 1;
+	text-align: center;
+	font-size: 24px;
+	font-weight: 700
+}
+
+.users-action .desc {
+	margin-bottom: 15px;
+	text-align: center;
+	color: #666
+}
+
+.users-action .group {
+	text-align: center
+}
+
+.users-action .group .txt {
+	margin: 0 75px;
+	color: #666
+}
+
+.users-action .group .btn {
+	position: relative;
+	display: inline-block;
+	width: 200px;
+	height: 45px;
+	line-height: 45px;
+	border-radius: 3px;
+	text-align: center;
+	font-size: 14px
+}
+
+.users-action .group .btn::after {
+	content: '';
+	position: absolute;
+	top: 18px;
+	right: 10px;
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border: 5px solid #fff
+}
+
+.users-action .group .btn.blue {
+	background-color: #1094ee;
+	color: #fff
+}
+
+.users-action .group .btn.blue::after {
+	border-color: transparent transparent transparent #fff
+}
+
+.users-action .group .btn.blue-light {
+	border: 1px solid #1094ee;
+	color: #1094ee
+}
+
+.users-action .group .btn.blue-light::after {
+	right: 20px;
+	border-color: transparent transparent transparent #1094ee
+}
+
+.new-comment {
+	margin-left: 10px;
+	padding: 6px 16px;
+	border-radius: 13px;
+	background-color: #37a1f9;
+	font-size: 14px;
+	color: #fff;
+	cursor: pointer
+}
+
+.new-comment:hover {
+	background-color: #078af6;
+	color: #fff
+}
+
+.programming-monkey-list .home-container {
+	width: 1000px;
+	margin: 0 auto
+}
+
+.programming-monkey-list .monkey-element {
+	width: 233px;
+	height: 250px;
+	display: block;
+	color: #333;
+	float: left;
+	box-sizing: border-box;
+	border: 1px solid #ececec;
+	padding: 20px 0;
+	text-align: center;
+	background-color: #fff;
+	margin: 0 14px 14px 0
+}
+
+.programming-monkey-list .monkey-element .head-pic {
+	width: 88px;
+	display: inline-block
+}
+
+.programming-monkey-list .monkey-element .head-pic img {
+	width: 88px;
+	height: 88px;
+	border-radius: 88px;
+	display: block
+}
+
+.programming-monkey-list .monkey-element .title {
+	color: #010101;
+	font-size: 20px;
+	margin: 0 auto;
+	line-height: 2.2;
+	font-family: 'microsoft yahei',sans-serif;
+	width: 220px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap
+}
+
+.programming-monkey-list .monkey-element .desc {
+	color: #4b4b4b;
+	font-size: 14px
+}
+
+.programming-monkey-list .monkey-element .rating {
+	margin-bottom: 1em;
+	font-size: 12px
+}
+
+.programming-monkey-list .monkey-element .rating i {
+	margin: 0
+}
+
+.programming-monkey-list .monkey-element .price {
+	display: inline-block;
+	background-color: #37a1f9;
+	color: #fff;
+	height: 23px;
+	line-height: 23px;
+	border-radius: 23px;
+	padding: 0 8px
+}
+
+.programming-monkey-list .monkey-element:hover {
+	box-shadow: 0 1px 1px rgba(0,0,0,.1);
+	color: #333
+}
+
+.programming-monkey-list.cases h3 {
+	font-size: 22px;
+	color: #6a6e75;
+	text-align: center
+}
+
+.programming-monkey-list.cases .more {
+	display: block;
+	font-size: 12px;
+	color: #a2a2a2;
+	text-align: center
+}
+
+.programming-monkey-list.cases .more .icon {
+	margin: 0;
+	width: 1em
+}
+
+.inn-user-comment .user-comment-list .user-info .tags,.inn-user-comment .user-comment-list .user-info .title,.inn-user-comment .user-comment-top {
+	margin-bottom: 10px
+}
+
+.programming-monkey-list.cases .projects {
+	margin-top: 25px;
+	margin-right: -30px
+}
+
+.inn-user-comment .page-wrap {
+	margin-top: 20px
+}
+
+.inn-user-comment .user-comment-top {
+	position: relative;
+	margin-top: 40px
+}
+
+.inn-user-comment .user-comment-top a {
+	display: inline-block;
+	padding: 6px 16px;
+	border-radius: 13px;
+	background-color: #37a1f9;
+	font-size: 14px;
+	color: #fff;
+	cursor: pointer
+}
+
+.inn-user-comment .user-comment-top a:hover {
+	background-color: #078af6;
+	color: #fff
+}
+
+.inn-user-comment .user-comment-top a.busy {
+	background-color: #e0e0e0
+}
+
+.inn-user-comment .user-comment-list {
+	font-size: 14px
+}
+
+.inn-user-comment .user-comment-list .item {
+	overflow: hidden;
+	padding: 20px;
+	background-color: #fff;
+	box-shadow: 0 1px 1px rgba(0,0,0,.1)
+}
+
+.inn-user-comment .user-comment-list .item:not(:last-child) {
+	border-bottom: 1px solid #eee
+}
+
+.inn-user-comment .user-comment-list .user-avatar {
+	float: left;
+	margin-right: 20px
+}
+
+.inn-user-comment .user-comment-list .user-avatar img {
+	width: 80px;
+	height: 80px;
+	border-radius: 100%
+}
+
+.inn-user-comment .user-comment-list .user-info {
+	float: left;
+	margin-right: 20px;
+	width: 300px
+}
+
+.inn-user-comment .user-comment-list .user-info .title a {
+	font-size: 20px;
+	color: #333
+}
+
+.inn-user-comment .user-comment-list .user-info .title .time {
+	margin-left: 10px;
+	font-size: 14px;
+	color: #999
+}
+
+.inn-user-comment .user-comment-list .user-info .tags span {
+	display: inline-block;
+	margin-right: 5px;
+	padding: 5px 8px;
+	border-radius: 2px;
+	background-color: #f1f1f1;
+	font-size: 12px
+}
+
+.inn-user-comment .user-comment-list .user-info .comment {
+	line-height: 20px;
+	color: #333
+}
+
+.inn-user-comment .user-comment-list .hire-user {
+	overflow: hidden;
+	float: right;
+	width: 520px;
+	padding: 20px 0 20px 20px;
+	border-radius: 4px;
+	border: 1px solid #eee;
+	border-left: 4px solid #078af6
+}
+
+.inn-user-comment .user-comment-list .hire-user-avatar {
+	float: left;
+	margin-right: 10px
+}
+
+.inn-user-comment .user-comment-list .hire-user-avatar img {
+	width: 50px;
+	height: 50px;
+	border-radius: 100%
+}
+
+.inn-user-comment .user-comment-list .hire-user-info .title {
+	overflow: hidden;
+	margin-bottom: 10px
+}
+
+.inn-user-comment .user-comment-list .hire-user-info .title .name {
+	font-size: 20px;
+	color: #333
+}
+
+.inn-user-comment .user-comment-list .hire-user-info .title .price {
+	position: relative;
+	top: -2px;
+	display: inline-block;
+	margin-left: 10px;
+	padding: 2px 10px;
+	border-radius: 13px;
+	background-color: #37a1f9;
+	color: #fff
+}
+
+.inn-user-comment .user-comment-list .hire-user-info .desc {
+	overflow: hidden;
+	height: 22px
+}
+
+.inn-user-comment .user-comment-list .hire-user-info .desc .company {
+	float: left;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	max-width: 340px;
+	font-size: 16px
+}
+
+.inn-user-comment .user-comment-list .hire-user-info .desc .checkbox {
+	float: right;
+	top: 2px;
+	right: 30px
+}
+
+.inn-user-comment .user-comment-list .hire-user-info .hire-btn {
+	display: inline-block;
+	float: right;
+	min-width: 80px;
+	height: 26px;
+	padding: 0 10px;
+	background-color: #37a1f9;
+	margin-right: 20px;
+	line-height: 26px;
+	text-align: center;
+	color: #fff
+}
+
+.inn-user-comment .user-comment-list .hire-user-info .hire-btn:hover {
+	background-color: #078af6
+}
+
+.inn-user-comment .user-comment-list .hire-user-info .hire-btn.off {
+	pointer-events: none;
+	background-color: #f1f1f1;
+	color: #666
+}
