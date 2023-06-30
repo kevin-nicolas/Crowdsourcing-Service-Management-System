@@ -163,30 +163,24 @@ if __name__ == '__main__':
         [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]
 
-    #取数据
-
+    # 取数据
     db = pymysql.connect("localhost", "root", "root", "Crowdsourcing")
     cursor = db.cursor()
     sqlj = "SELECT * FROM user_task"
 
     try:
         cursor.execute(sqlj)
-
         resultj = cursor.fetchall()
-
         for i in resultj:
             if i[0]%2018000 < 10:
                 if i[3] == "投递中":
                     if i[1] < 10:
                         J[i[1]%2018000][i[1]] = 1
-
     sqlz = "SELECT * FROM item"
 
     try:
         cursor.execute(sqlz)
-
         resultz = cursor.fetchall()
-
         for i in resultz:
             if i[0] < 10:
                 if i[16]%2018000 < 10 :
@@ -203,9 +197,11 @@ if __name__ == '__main__':
                 P2[i][j] = 1
             else:
                 P2[i][j] = 0
+
     # 新的偏好矩阵
     P2T = [[P2[j][i] for j in range(len(P2))] for i in range(len(P2[0]))]
-
+    
+    # 基于众包项目信息的接包人员发出投递的矩阵基于众包项目信息的接包人员发出投递的矩阵J2
     J2 = [
         [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -217,7 +213,8 @@ if __name__ == '__main__':
         [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]
-
+    
+    # 基于接包人员信息的众包项目发出邀请的矩阵Z2
     Z2 = [
         [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -230,12 +227,10 @@ if __name__ == '__main__':
         [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]
 
-    # 基于众包项目信息的接包人员发出投递的矩阵基于众包项目信息的接包人员发出投递的矩阵J2
     for i in range(len(J)):
         for j in range(len(P2T)):
             J2[i][j] = J[i][j] + P2T[i][j]
     
-    # 基于接包人员信息的众包项目发出邀请的矩阵Z2
     for i in range(len(J)):
         for j in range(len(P2T)):
             Z2[i][j] = Z[i][j] + P2T[i][j]
@@ -245,15 +240,14 @@ if __name__ == '__main__':
     centroidsZ2, clusterZ2 = k_means(Z2, 3)
     
     # 基于矩阵分解的协同过滤算法
-    
     for c in clusterJ2:
         data1 = np.array(c)
         cf1 = CF_svd(k=3, r=3)
         ans1 = cf1.fit(data1)
-        print(ans1) #推荐项目
+        print(ans1) # 推荐项目
     
     for c in clusterZ2:
         data2 = np.array(c)
         cf2 = CF_svd(k=3, r=3)
         ans2 = cf2.fit(data2)
-        print(ans2) #推荐接包人员
+        print(ans2) # 推荐接包人员
